@@ -1,0 +1,24 @@
+{
+  "navText": {
+    "e_back": "1e5a90d7-a184-4d98-ba5e-904b7e0368dc",
+    "e_forward": "b0427f5a-c90f-4876-8a8e-dcec7169d5c4"
+  },
+  "resources": [
+    {
+      "name": "FAQ",
+      "link": "downloads/pdf/pdf-sample.pdf"
+    }
+  ],
+  "links": [
+    {
+      "name": "Google.com",
+      "link": "https://skydrive3m.sharepoint.com/sites/LSS/curricula/Lists/Academy/AllItems.aspx"
+    }
+  ],
+  "e_lessonNames": [
+    "60c04845-ce4f-4e06-a55c-69876e73dbd9",
+    "ab16c23e-102f-47ca-ad3d-83b2f1d4b848",
+    "fc3463ba-f00f-4d73-ae40-3732d9034a69",
+    "15eafce0-d494-46cc-8954-b3c4206aa913"
+  ]
+}

@@ -1,0 +1,162 @@
+https://vuejsexamples.com/progressbar-for-vue-js-2/
+
+Email              bthvedt@alleni.com
+
+Password – Will be sent separately in a secure email. Same password for all sites below.
+
+Spoiler Alert: BeTh0920!!
+ 
+Bitbucket
+TO LOGIN
+Username: bthvedt@alleni.com
+Password: BeTh0920!!
+ 
+TO PUSH   
+Username: bthvedt
+Password: ATBBGyy9kYVfj5QyYauhLaAFrpDyEBBA02CB 
+(To make new use Avatar->Settings/personal settings/Create app Password. Give permissions
+
+https://bitbucket.org/Allen_Interactions/3m_quality_essentials/src/master/ 
+
+TO MAKE A NEW BRANCH
+
+RUN THE UPDATE SCRIPT cd into CLEANUP and: 
+node . --path="../../ADM/ADM Sustainability Internal/design_proof" --endpoint=live --email=sadmin@mpemail.com --password=Song2!2Montage?2Skirmish
+
+REMINDER: This copies all the stuff into shipping code
+
+git init
+git remote rm origin
+git remote add origin https://bitbucket.org/Allen_Interactions/3m_quality_essentials.git
+(my own repo is https://github.com/BThvedt/3m_quality_commercialization.git - I only use "main" for this)
+(MIGHT NEED: git pull origin master --allow-unrelated-histories)
+git push --set-upstream origin master
+ 
+MAKE A NEW BRANCH
+git branch alpha (or beta or gold)
+git checkout alpha
+
+(run the cleanup script)
+
+git status
+git add .
+git commit -m "Alpha Build"
+git push --set-upstream origin alpha
+
+Then create pull request
+Do not check "delete alpha" (or branch)
+CONFLICTS? 
+https://support.atlassian.com/bitbucket-cloud/docs/resolve-merge-conflicts/ (git pull origin master into beta or whatever)
+https://linuxpip.org/git-accept-all-incoming-changes/ (git checout --ours .)
+Merge 
+
+And that is the bitbucket workflow 
+
+STILL CANT MERGE?
+Just switch branch to master, run cleanup script then push that
+"git push origin master -f" (the force is to force an update)
+
+
+
+
+(create branch on bitbucket)
+git fetch 
+git checkout <branch>
+
+bthvedt@alleni.com
+
+
+ 
+Email
+
+https://outlook.office.com 
+
+Zoom
+
+https://zoom.us/signin
+ 
+Egnyte
+ 
+https://alleni.egnyte.com/
+https://fileshare.alleni.com/navigate/folder/e814da10-c605-4878-9d92-f016b5669469
+
+Jira
+https://alleninteractions.atlassian.net/jira/software/c/projects/QUAL/boards/1231
+
+FTP
+WinSCP
+Username: bthvedt@alleni.com
+Password : BeBt1123!!
+
+host: ftp.alleni.com
+protocol: ftp 
+port: 21
+
+
+
+clients.alleni.com
+Clients:
+https://clients.alleni.com
+Username: ADM
+Password: ADMReview
+
+username: 3M QA
+password: qa
+
+s3 buckket w/ password
+https://medium.com/@lmakarov/serverless-password-protecting-a-static-website-in-an-aws-s3-bucket-bfaaa01b8666
+
+QA:
+https://clients.alleni.com
+username: 3M QA
+password: qa
+
+Clients:
+https://clients.alleni.com
+username: 3M
+password: Client Review
+
+invitation emails: 
+colson@alleni.com, aiverson@alleni.com, ntichawa@alleni.com, estrain@alleni.com
+
+Invoices
+https://app.invoicesimple.com/
+
+Send To:
+Accounts Payable, Iverson, Ann 
+CC: Lee, Steve
+
+aiverson@alleni.com
+AP@alleni.com
+slee@alleni.com 
+
+Tasks 
+
+1) Get rid of Discover Funnel drag - check
+2) Resize the question feedback modals - check
+3) Replace 'Next' Button in NIGHTMARE SCENARIO
+4) Fix it so that audio has to end in NIGHTMARE SCENARIO
+5) redo text of feedback in - check
+
+
+notes: 
+ 
+Business Opportunity = light
+Manufacturing = scale
+Compliance/<br>Legal = money
+Customer<br/>Market = chart
+Products(s) = plans
+
+
+KleinesKaninchen - has anxiety, mental hospital past name means little rabbit little one
+Frey - german, believes in election hacking 
+
+this might be what I need
+https://www.npmjs.com/package/jsonpath
+
+https://superuser.com/questions/397943/how-to-extract-a-complete-list-of-extension-types-within-a-directory
+(makes file)
+Get-Childitem -Recurse | WHERE { -NOT $_.PSIsContainer } | Group Extension -NoElement | Sort Count -Desc > FileExtensions.txt 
+
+(prints extensions)
+Get-ChildItem . -Include *.* -Recurse | Select-Object Extension | Sort-Object -Property Extension -Unique

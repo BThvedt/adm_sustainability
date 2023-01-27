@@ -1,0 +1,26 @@
+{
+  "e_prompt": "Choose your role",
+  "people": [
+    {
+      "id": 1,
+      "role": "Person One",
+      "title": "Customer",
+      "image": "conversation/convo-headshot-1.png",
+      "e_buttontext": "Choose"
+    },
+    {
+      "id": 2,
+      "role": "Person Two",
+      "title": "Customer",
+      "image": "conversation/convo-headshot-2.png",
+      "e_buttontext": "Choose"
+    },
+    {
+      "id": 3,
+      "role": "Person Three",
+      "title": "Customer",
+      "image": "conversation/convo-headshot-3.png",
+      "e_buttontext": "Choose"
+    }
+  ]
+}

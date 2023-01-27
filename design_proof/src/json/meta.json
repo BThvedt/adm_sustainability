@@ -1,0 +1,244 @@
+{
+  "fakeLoadingTimes": {
+    "on": true,
+    "minDuration": 500
+  },
+  "specialPages": {
+    "loading": true,
+    "locked": true
+  },
+
+  "metaIds": {
+    "clientId": null,
+    "moduleId": "c2e2e3c0-b632-4dcf-b42c-710c355c0360",
+    "courseId": "77367342-3ca4-49b7-b971-6129a3bf1072"
+  },
+
+  "extraJson": ["glossary.json", "extra.json"],
+
+  "display": "pseudo-responsive",
+
+  "sizes": [
+    {
+      "name": "small",
+      "width": 900,
+      "height": 600,
+      "breakpoint": "doesnt-matter-here"
+    },
+    {
+      "name": "large",
+      "width": 1536,
+      "height": 750,
+      "breakpoint": "doesnt-matter-here"
+    }
+  ],
+
+  "sections": [
+    {
+      "id": "Hx5Dxudy",
+      "name": "Menu",
+      "pages": [
+        {
+          "id": "8U9NajQt",
+          "name": "Menu",
+          "specialClass": "menu-class"
+        }
+      ],
+      "hiddenPages": []
+    },
+    {
+      "id": "rngESQ64",
+      "name": "Animation",
+      "subSectionData": [
+        {
+          "name": "Introduction Video",
+          "page": 0
+        }
+      ],
+      "pages": [
+        {
+          "id": "XEU4Azyr",
+          "name": "Introduction Video",
+          "specialClass": "intro-video-class",
+          "data": {}
+        }
+      ],
+      "hiddenPages": []
+    },
+    {
+      "id": "5K6PvM2k",
+      "name": "Drag And Drop",
+      "subSectionData": [
+        {
+          "name": "Introduction",
+          "page": 0
+        },
+        {
+          "name": "Activity",
+          "page": 2
+        },
+        {
+          "name": "Conclusion",
+          "page": 3
+        }
+      ],
+      "pages": [
+        {
+          "id": "nyOoIEb3",
+          "name": "Intro Page One",
+          "specialClass": "dnd-intro-pg-1-class",
+          "data": {
+            "showContinue": true
+          }
+        },
+        {
+          "id": "6jlGHdF8",
+          "name": "Instructions",
+          "specialClass": "dnd-intro-pg-1-class"
+        },
+        {
+          "id": "wDx4QE90",
+          "name": "NewActivity",
+          "specialClass": "dnd-activity-class"
+        },
+        {
+          "id": "Gd3cTXio",
+          "name": "Activity",
+          "specialClass": "dnd-activity-class"
+        },
+        {
+          "id": "ghT07UMa",
+          "name": "Conclusion",
+          "specialClass": "dnd-conclusion-pg-2-class"
+        }
+      ],
+      "hiddenPages": []
+    },
+    {
+      "id": "VNv1hBBL",
+      "name": "Categories",
+      "subSectionData": [
+        {
+          "name": "Introduction",
+          "page": 0
+        },
+        {
+          "name": "Activity",
+          "page": 2
+        },
+        {
+          "name": "Conclusion",
+          "page": 3
+        }
+      ],
+      "pages": [
+        {
+          "id": "fIU3ieaf",
+          "name": "Intro Page One",
+          "specialClass": "categories-intro-pg-1-class",
+          "data": {
+            "showContinue": true
+          }
+        },
+        {
+          "id": "WEp57ZMQ",
+          "name": "Instructions",
+          "specialClass": "categories-intro-class"
+        },
+        {
+          "id": "gL7O4Yod",
+          "name": "Activity",
+          "specialClass": "dnd-activity-class"
+        },
+        {
+          "id": "belYuoBB",
+          "name": "Conclusion",
+          "specialClass": "dnd-intro-pg-2-class"
+        }
+      ],
+      "hiddenPages": []
+    },
+    {
+      "id": "J5aWxkz7",
+      "name": "Timeline",
+      "subSectionData": [
+        {
+          "name": "Introduction",
+          "page": 0
+        },
+        {
+          "name": "Activity",
+          "page": 2
+        },
+        {
+          "name": "Conclusion",
+          "page": 3
+        }
+      ],
+      "pages": [
+        {
+          "id": "JbRARCGK",
+          "name": "Intro Page One",
+          "specialClass": "categories-intro-pg-1-class",
+          "data": {
+            "showContinue": true
+          }
+        },
+        {
+          "id": "lMw290QG",
+          "name": "Instructions",
+          "specialClass": "categories-intro-class"
+        },
+        {
+          "id": "N9AI8VXE",
+          "name": "Activity",
+          "specialClass": "dnd-activity-class"
+        },
+        {
+          "id": "MC5qEusl",
+          "name": "Conclusion",
+          "specialClass": "dnd-conclusion-class",
+          "data": {
+            "showContinue": true
+          }
+        },
+        {
+          "id": "L680n9d5",
+          "name": "Conclusion Page Two",
+          "specialClass": "dnd-intro-pg-2-class"
+        }
+      ],
+      "hiddenPages": []
+    }
+  ],
+  "suspendedData": {
+    "locked": [false, false, false, false, false],
+    "completed": [false, false, false, false, false],
+    "lastLogin": "1/1/2021"
+  },
+  "moduleDefaults": {
+    "resumed": false,
+    "moduleStatus": "incomplete",
+    "lastLocation": "/5K6PvM2k/wDx4QE90",
+    "score": {
+      "max": 100,
+      "min": 0,
+      "raw": 0
+    }
+  },
+  "userDefaults": {
+    "userName": "defaultUserName",
+    "userId": "defaultUserName"
+  },
+  "objectiveDefaults": [
+    {
+      "id": "SampleObjective",
+      "status": "incomplete",
+      "score": {
+        "max": 100,
+        "min": 0,
+        "raw": 0
+      }
+    }
+  ]
+}

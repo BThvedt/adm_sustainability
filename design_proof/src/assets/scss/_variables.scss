@@ -1,0 +1,55 @@
+$box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.15);
+$normal-transition: 1s all;
+$med-transition: 600ms all;
+$fast-transition: 300ms all;
+$very-fast-transition: 150ms all;
+
+// Problem: there are like multiple similar colors, they're all unnamed, I'm not sure which ones I'm supposed to use
+// Gotta hunt around a lot to find the right "main styles"
+// for sake of clairty and mistake prevention. Style sheet is recommended.
+
+$white: #ffffff;
+$darkBlue: #012169;
+$buttonHover: #00109e;
+$blue: #008edb;
+$green: #8bc400;
+$emerald: #00ad50;
+$gray: #6d6e71;
+$lightGray: #dbe2e6;
+$purple: #440099;
+$orange: #ffad00;
+$red: #ff0000;
+
+$xl: 48px;
+$large: 32px;
+$med: 24px;
+$normal: 19px;
+$button: 16px;
+
+// small resolutions
+$s-xl: 42px;
+$s-large: 28px;
+$s-med: 20.4px;
+$s-normal: 18px;
+$s-button: 15px;
+
+$menuHeight: 76px;
+$pagePadding: 2em;
+
+$s-pagePadding: 1.5em;
+
+// $font: sans-serif;
+// $color: #777;
+
+// $text-size-bigger: 36px;
+// $text-size-big: 32px;
+// $text-size-med: 24px;
+// $text-size-normal: 20px;
+// $text-size-small: 16px;
+// $text-size-xs: 14px;
+
+// $text-page-width: 80%;
+
+// $hover-background: #ccc;
+$cali: "Calibri";
+$din: "DIN Next Slab Pro";

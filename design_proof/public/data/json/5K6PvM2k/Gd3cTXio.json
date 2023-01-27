@@ -1,0 +1,91 @@
+{
+  "e_title": "95fac113-abe1-4323-9682-9126fc8d75eb",
+  "e_subTitle": "dae88b32-2106-4425-a076-48cf8561dcae",
+  "e_subTitle_2": "f27ad9a6-e899-47e6-bece-261b7619bbaf",
+  "introModal": {
+    "e_title": "8a5b3231-6ba0-4385-a085-f6baa608ae9d",
+    "e_text": "3af94d06-80ed-4723-a549-1542d2e0c628"
+  },
+  "conclusionModal": {
+    "e_title": "3dc5ecc1-38fe-4ab2-aff9-a5b58fede372",
+    "e_text": "5c97fdff-3ce2-4cc5-8177-f0a0f114e37b"
+  },
+  "incorrectText": {
+    "e_prompt": "d69d4104-bf6e-40bb-9b97-279b9c797b4f",
+    "e_tryAgain": "f6fb2370-e4f9-4671-914d-67313ec0dd70"
+  },
+  "correctText": {
+    "e_prompt": "72c8c1b1-15b3-4cca-98c4-ca194a61b15a",
+    "e_text": "6b1f6b59-1935-47c3-8b29-ff84c9dda43f"
+  },
+  "toolDropAreas": [
+    {
+      "e_title": "18e1b42f-5b12-4245-b470-84df3d9cf2bd",
+      "accepts": 1
+    },
+    {
+      "e_title": "9ff356ef-e59f-47b8-aee1-6ddde455502f",
+      "accepts": 2
+    },
+    {
+      "e_title": "1d73b49d-1ad7-41bc-a304-f62bedfa57ca",
+      "accepts": 3
+    }
+  ],
+  "toolDraggables": [
+    {
+      "id": 1,
+      "icon": "map-activity-beakers.png",
+      "e_text": "f9378e5b-e31b-450d-8f9d-5d71ba741845",
+      "correctDropArea": 1,
+      "e_clickRevealScreens": [
+        "10dbe726-893b-4c66-aa0c-c24e6dcb3dbe",
+        "37412608-4c1f-4456-a16b-2f2004676d50"
+      ]
+    },
+    {
+      "id": 2,
+      "icon": "map-activity-comp.png",
+      "e_text": "99e7d957-ec50-4ca3-ac4e-cf01a3c7b42b",
+      "correctDropArea": 2,
+      "e_clickRevealScreens": [
+        "e93de925-12fc-4ec7-83c2-b204f46837f5",
+        "f6d20a30-2000-458b-abe7-b4447befbc91",
+        "ac209702-afd7-415b-80be-556b038eb90f"
+      ]
+    },
+    {
+      "id": 3,
+      "icon": "map-activity-forklift.png",
+      "e_text": "49b44635-cdb8-4072-8e9b-88cd0660ae60",
+      "correctDropArea": 3,
+      "e_clickRevealScreens": [
+        "02f60cea-0316-498f-981f-bb53bd69b753",
+        "7883e706-c958-4c1c-8eb1-7696c128cfbb",
+        "4d4620a2-5815-440b-84dd-200b82804f93"
+      ]
+    },
+    {
+      "id": 4,
+      "icon": "map-activity-checklist.png",
+      "e_text": "ab23845b-427e-4445-9709-b5b01208f523",
+      "correctDropArea": 2,
+      "e_clickRevealScreens": [
+        "93a1223e-39dd-439b-9a73-ebe93dae3bd6",
+        "50e529ca-ede5-4d92-8925-bd11797efc90",
+        "45f1989e-0bdd-46a8-87f9-1970c93fb668"
+      ]
+    },
+    {
+      "id": 5,
+      "icon": "map-activity-convo.png",
+      "e_text": "f9e105e2-9bfc-4c47-92a7-098382ccc1d1",
+      "correctDropArea": 3,
+      "e_clickRevealScreens": [
+        "f1033cbc-e937-45c1-aece-87cf5218e40e",
+        "df39aa8a-7f08-403f-b5fe-ad2800e1cf1d",
+        "40b63cd1-3eda-4772-971c-96745bc7974c"
+      ]
+    }
+  ]
+}

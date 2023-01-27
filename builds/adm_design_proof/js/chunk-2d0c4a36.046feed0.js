@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0c4a36"],{"3c4d":function(e){e.exports=JSON.parse('{"e_title":"Lesson Conclusion","e_subtitle":"This will provide the key takeaways for learners. Tellus mentum pellentesque consectetur adipiscing elit in est ipsum dolor sit amet.","e_text":"<p>Click the button to complete the lesson</p>","e_homeButton":"Complete Lesson"}')}}]);
+//# sourceMappingURL=chunk-2d0c4a36.046feed0.js.map
