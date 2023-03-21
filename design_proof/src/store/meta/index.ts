@@ -15,6 +15,7 @@ import { actions } from "./actions"
 
 const state: MetaState = {
   bodyClickedTicker: 0,
+  windowResizeTicker: 0,
   sizes: [],
   sections: [],
 
@@ -45,6 +46,8 @@ const state: MetaState = {
 
   extraJson: {},
 
+  modalShowing: false,
+
   scorm: {
     module: {
       resumed: undefined, // to be added later
@@ -64,6 +67,7 @@ const state: MetaState = {
       locked: [],
       completed: [],
       lastLogin: "1/1/2021",
+      lockedLessonParts: {},
     },
   },
   jsonData: {},

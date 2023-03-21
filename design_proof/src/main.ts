@@ -20,6 +20,7 @@ import "vue2-perfect-scrollbar/dist/vue2-perfect-scrollbar.css"
 import "vue-loading-overlay/dist/vue-loading.css"
 import "animate.css"
 import "vue-scroll-picker/dist/style.css"
+// import "video.js/dist/video-js.css"
 
 import { library } from "@fortawesome/fontawesome-svg-core"
 import {

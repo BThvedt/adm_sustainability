@@ -3,9 +3,9 @@
     <div id="glossary-modal-inner">
       <h2 id="glossary-title">Glossary</h2>
 
-      <h1 id="todo-id">TO DO: Make Glossary</h1>
+      <!-- <h1 id="todo-id">TO DO: Make Glossary</h1> -->
 
-      <!-- <Tabs
+      <Tabs
         id="glossary-tabs"
         :tabList="
           Object.keys(glossaryJson.tabs).map(
@@ -17,6 +17,7 @@
           <Tabs
             id="glossary-terms-tabs"
             orientation="vertical"
+            :transition="true"
             :tabList="glossaryJson.tabs.terms.tabs.map((tab) => tab.e_label)"
           >
             <template
@@ -30,13 +31,30 @@
         </template>
         <template v-slot:tabPanel-2>
           <div id="acronyms-container">
-            <GlossaryPage :terms="glossaryJson.tabs.acronyms.items" />
+            <Tabs
+              id="glossary-terms-tabs-two"
+              orientation="vertical"
+              :transition="true"
+              :tabList="
+                glossaryJson.tabs.acronyms.tabs.map((tab) => tab.e_label)
+              "
+            >
+              <template
+                v-for="(tab, index) in glossaryJson.tabs.acronyms.tabs"
+                v-slot:[getSlotName(index)]
+                :class="`tab-${index + 1}`"
+              >
+                <GlossaryPage :terms="tab.items" :key="index" />
+              </template>
+            </Tabs>
           </div>
         </template>
-      </Tabs> -->
+      </Tabs>
 
       <div id="close-container">
-        <button id="close-button" @click="closeModal">Close</button>
+        <button class="button" id="close-button" @click="closeModal">
+          Close
+        </button>
       </div>
     </div>
   </ModalBase>
@@ -46,8 +64,8 @@
 import Vue from "vue"
 import ModalBase from "@/components/ModalBase.vue"
 import E from "@/components/editable/E.vue"
-// import Tabs from "@/components/templates/Tabs.vue"
-// import GlossaryPage from "@/components/modals/glossary/GlossaryPage.vue"
+import Tabs from "@/components/templates/Tabs.vue"
+import GlossaryPage from "@/components/modals/glossary/GlossaryPage.vue"
 // import VueJsonPretty from "vue-json-pretty"
 // import "vue-json-pretty/lib/styles.css"
 
@@ -99,8 +117,8 @@ export default Vue.extend({
     "showing",
   ],
 
-  //components: { ModalBase, Tabs, GlossaryPage },
-  components: { ModalBase },
+  components: { ModalBase, Tabs, GlossaryPage },
+  // components: { ModalBase },
 })
 </script>
 
@@ -112,13 +130,24 @@ export default Vue.extend({
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 0em 2em 1em 3em;
+  padding: 0em 1.5em 1em 1.5em;
+  color: $gray;
 
   #glossary-title {
+    color: $darkBlue;
     position: absolute;
     top: 0;
   }
   ::v-deep #glossary-tabs {
+    font-size: 0.9em;
+    line-height: 1.1em;
+
+    .tabs-content {
+      ul li {
+        margin: 0.5em 0em;
+      }
+    }
+
     .tabs {
       margin-left: 8em;
       margin-top: 0.3em;
@@ -128,9 +157,10 @@ export default Vue.extend({
       width: calc(100%);
     }
 
-    #glossary-terms-tabs {
+    #glossary-terms-tabs,
+    #glossary-terms-tabs-two {
       .tabs-list.vertical {
-        width: 100px;
+        width: 75px;
       }
       .tabs {
         margin-left: 0;
@@ -143,10 +173,10 @@ export default Vue.extend({
       }
     }
   }
-  #acronyms-container {
-    padding-top: 1em;
-    padding-left: 2em;
-  }
+  // #acronyms-container {
+  //   padding-top: 1em;
+  //   padding-left: 2em;
+  // }
   #close-container {
     margin: 1.5em 0em 1em 0em;
     display: flex;
@@ -156,7 +186,7 @@ export default Vue.extend({
     bottom: 0;
     box-sizing: border-box;
     // padding-right: 3em;
-    padding-right: 3em;
+    // padding-right: 3em;
   }
 
   #close-button {

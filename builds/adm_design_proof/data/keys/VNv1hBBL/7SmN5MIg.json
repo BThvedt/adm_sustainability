@@ -1,0 +1,149 @@
+{
+  "ead879f6-1274-46a1-bdc2-36a2457bd0fa": {
+    "html": "<p>Scope 3 emissions are the result of activities from assets not owned or controlled by ADM, but that indirectly affect our value chain. Scope 3 emissions include all sources not within ADM’s scope 1 and 2 boundary.</p><p>The Greenhouse Gas Protocol defines 15 categories of scope 3 emissions, though not every category is relevant to ADM. In fact, there are three key categories that ADM can control and have the largest impact. You’ll learn more in this lesson.</p>"
+  },
+  "6111553f-43c5-4eab-96cf-e982a0353c0d": {
+    "html": "What are Scope 3 Emissions?"
+  },
+  "3bb6cd4a-703a-4581-a166-9eb6cc78e34f": {
+    "html": "Select each category to learn more. When you’re done exploring all categories, the Next button will appear. Select it to continue."
+  },
+  "cc91ecf0-571e-4d42-b705-7ae2d1044a5c": {
+    "html": "Next"
+  },
+  "76620982-33f0-4ca7-ab5f-3bf1fa6bd4aa": {
+    "html": "<strong>Category 1:</strong> Purchased goods and services"
+  },
+  "652755ab-0a38-4071-ac15-20a8ca5c2cab": {
+    "html": "Purchased goods and services"
+  },
+  "212415d2-d2eb-4922-a3a8-1c87514f8645": {
+    "html": "All items or services purchased by ADM including raw material inputs, chemicals, packaging, office supplies, tech support, etc."
+  },
+  "2c61a086-a7ca-4888-8cf1-53397f41006f": {
+    "html": "<strong>Category 2:</strong> Capital Goods"
+  },
+  "e3ce2c76-9f22-4f94-95b8-d33e5a5c81d3": {
+    "html": "Capital Goods"
+  },
+  "0329ad47-7efd-48ac-845a-3353e0446d37": {
+    "html": "Any equipment or large purchases paid for through capital expenditures rather than operating budgets."
+  },
+  "25a05d52-9b28-4f3f-bd20-936ef774e90d": {
+    "html": "<strong>Category 3:</strong> Fuel and energy-related activities"
+  },
+  "4299837d-86ea-4814-bb0a-219e9fe53dd1": {
+    "html": "Fuel and energy-related activities (FERA)"
+  },
+  "72e7caa6-c492-478f-9dbf-ef84a6ad6c4f": {
+    "html": "Emissions related to the creation of fuels we use onsite, such as the drilling and refining of petroleum."
+  },
+  "2f7c47f7-59b8-4564-ae02-9128203ff9a0": {
+    "html": "<strong>Category 4:</strong> Upstream transportation & distribution"
+  },
+  "41a68d08-0173-490b-8ec2-014171b403dc": {
+    "html": "Upstream transportation & distribution"
+  },
+  "c76d5dbb-23d0-4244-b2fb-ec03cf54d6f9": {
+    "html": "Transportation of our raw ingredients/commodities, as well as the transportation of our finished products, if we pay for the transportation."
+  },
+  "4ead3f99-d14a-4cc7-aaf1-68a7ab7d22b3": {
+    "html": "<strong>Category 5:</strong> Waste generated in operations"
+  },
+  "e5ff57f2-21e5-460f-b73c-86d24ea3c088": {
+    "html": "Waste generated in operations"
+  },
+  "5a7a7034-6b49-47fd-b011-5a8f871be2f2": {
+    "html": "Emissions from the decomposition/landfilling of waste generated in ADM operations."
+  },
+  "8b501540-1864-4875-90a5-cdaccc9d58ad": {
+    "html": "<strong>Category 6:</strong> Business travel"
+  },
+  "c52fdf7e-dec4-499a-ad41-d3001a95844e": {
+    "html": "Business travel"
+  },
+  "4819c6d1-361d-48d7-8feb-dd700109c1db": {
+    "html": "Emissions from vehicles used to transport employees for business trips, such as airplanes or rental cars."
+  },
+  "e4d8616b-009a-4218-9fce-571ddf3fddb4": {
+    "html": "<strong>Category 7:</strong> Employee commuting"
+  },
+  "5d30d2c2-b91a-407b-8672-15a316484c90": {
+    "html": "Employee commuting"
+  },
+  "0e7fefca-7ffc-4bd5-b4c7-fb9609de6152": {
+    "html": "Emissions from the personal vehicles or public transportation vehicles of employees traveling to and from work."
+  },
+  "9688934c-f100-485c-bf75-89319430f274": {
+    "html": "<strong>Category 8:</strong> Upstream leased assets"
+  },
+  "dba078ee-d8a4-488b-9e14-82239897a052": {
+    "html": "Upstream leased assets"
+  },
+  "9e226670-4136-47c5-98bd-c8d6a2d1d89a": {
+    "html": "These are emissions from assets owned by another company and operated by the reporting entity. Because ADM reports using an operational control methodology, upstream leased asset emissions do not apply to ADM because these emissions are already reported in our Scope 1 footprint."
+  },
+  "1d3b4c82-38d9-4bf9-a2e6-278def313f42": {
+    "html": "<strong>Category 9:</strong> Downstream transportation and distribution"
+  },
+  "6229b69b-3430-493b-8fa9-06afab816f81": {
+    "html": "Downstream transportation and distribution"
+  },
+  "6552251b-bfbc-4dcd-924c-a7dd88d57bce": {
+    "html": "Transportation of ADM’s final product to customers, except where we pay for the transportation, which is covered by Category 4 (Upstream transportation &amp; distribution)."
+  },
+  "4185ee9a-c568-40d4-aa27-2b4b1d94c57e": {
+    "html": "<strong>Category 10:</strong> Processing of sold products"
+  },
+  "4cb17509-b045-40c5-a30b-e804102434af": {
+    "html": "Processing of sold products"
+  },
+  "f4f2c10a-7886-432a-853d-70be727fc7ea": {
+    "html": "Emissions from processing of sold intermediate products by third parties (e.g., manufacturers) after sale by ADM."
+  },
+  "ee2aa6b9-383a-47ee-a7e3-b02d654fdaa1": {
+    "html": "<strong>Category 11:</strong> Use of sold products"
+  },
+  "5cd47727-90c8-4ed1-9c7c-89e855b58169": {
+    "html": "Use of sold products"
+  },
+  "4d9899b0-9fe2-4eec-b0d4-b2de0336c548": {
+    "html": "Emissions from the use of products we sell, such as the combustion of ethanol or biodiesel."
+  },
+  "159783cd-21f8-4e3b-a94b-ae841de1d9c0": {
+    "html": "<strong>Category 12:</strong> End-of-life treatment of sold products"
+  },
+  "a24c9b67-d09d-411f-af16-df871c4ec1a0": {
+    "html": "End-of-life treatment of sold product"
+  },
+  "5a4df36e-c72d-4b5f-afbe-198e890bc0bb": {
+    "html": "Emissions from the disposal of products ADM sold, typically the emissions from packaging waste."
+  },
+  "6e1f0df3-741b-4a41-a383-47e7426e745c": {
+    "html": "<strong>Category 13:</strong> Downstream leased assets"
+  },
+  "f3c583f9-7e29-49b6-bed7-fbcf078d6dee": {
+    "html": "Downstream leased assets"
+  },
+  "08778f69-9cdf-4e39-b773-e1374ad926ad": {
+    "html": "ADM-owned facilities or vehicles that are leased to and operated by another entity."
+  },
+  "6e0d396c-c18d-4176-8cd4-3e18539f5456": {
+    "html": "<strong>Category 14:</strong> Franchises"
+  },
+  "664efa54-ce8a-4152-8c6a-7452e5d9d029": {
+    "html": "Franchises"
+  },
+  "2e4f9ba8-b5e1-4a71-a517-56508289a07f": {
+    "html": "This category is not applicable to ADM. An example is a local McDonald’s that is not owned or operated by McDonald’s corporation."
+  },
+  "94f46b92-c629-43b4-8436-0111ed50433e": {
+    "html": "<strong>Category 15:</strong> Investments"
+  },
+  "68a8f6e1-49fa-4e64-9f77-d36b269d8b14": {
+    "html": "Investments"
+  },
+  "be1e8a20-a95c-4d6d-926b-f603a9c3538e": {
+    "html": "Emissions from companies that ADM invests in. For example, as a 27% owner of Wilmar, we report 27% of Wilmar’s scope 1+2 footprint in our scope 3 Investments category."
+  }
+}

@@ -1,9 +1,16 @@
 <template>
   <div class="module-app-container" @click="bodyClicked">
-    <div id="app">
-      <NavMenu @showGlossary="showGlossary" />
+    <div id="app" class="background-transition" :class="theSpecialPageClass">
+      <transition
+        :enter-active-class="TEnter.FADE_IN"
+        :leave-active-class="TExit.FADE_OUT"
+      >
+        <div class="modalbackground" v-if="isModalShowing" />
+      </transition>
 
-      <div id="stage" v-if="mounted && showStage" :class="theSpecialPageClass">
+      <NavMenu ref="navMenu" :key="screenResizeTicker" />
+
+      <div id="stage" v-if="mounted && showStage">
         <!-- put menu here -->
         <transition
           :enter-active-class="'animate__animated animate__fadeIn'"
@@ -35,8 +42,8 @@
 
         <GlossaryModal ref="glossaryModal" />
 
-        <p>Current page data</p>
-        <div>{{ currentPageData }}</div>
+        <!-- <p>Current page data</p>
+        <div>{{ currentPageData }}</div> -->
 
         <transition
           :enter-active-class="`${TEnter.FADE_IN} one-sec-delay`"
@@ -165,7 +172,12 @@ export default Vue.extend({
       TExit,
     }
   },
-
+  created() {
+    window.addEventListener("resize", this.resizeHandler)
+  },
+  destroyed() {
+    window.removeEventListener("resize", this.resizeHandler)
+  },
   async mounted() {
     /*console.log("write the go to hidden page mutation next")
     console.log("and then, the menu-less boilerplate")
@@ -298,6 +310,12 @@ export default Vue.extend({
     bigConsoleLog("mounted complete")
   },
   computed: {
+    isModalShowing(): boolean {
+      return this.$store.getters["meta/getModalShowing"]
+    },
+    screenResizeTicker(): number {
+      return this.$store.getters["meta/getWindowResizeTicker"]
+    },
     screenDimensions: {
       get(): { width: string; height: string } {
         let { width, height } = this.$store.getters["meta/getScreenDimensions"]
@@ -344,6 +362,11 @@ export default Vue.extend({
     },
   },
   methods: {
+    resizeHandler(e: any) {
+      // console.log("Ive been resized")
+      // console.log(e)
+      this.$store.commit("meta/incrementResizeTicker")
+    },
     goToNextPage() {
       this.$store.dispatch("meta/goForward")
     },
@@ -353,6 +376,7 @@ export default Vue.extend({
     showGlossary() {
       // this.glossaryShowing = true
       ;(this.$refs["glossaryModal"] as any).show()
+      this.$store.dispatch("meta/closeMenu")
     },
     handleContinueClose(shouldContinue: boolean) {
       this.continueModalShow = false
@@ -482,17 +506,26 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
+.modalbackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
 .module-app-container {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(41, 201, 242, 1) 100%
-  );
+  // background: linear-gradient(
+  //   0deg,
+  //   rgba(255, 255, 255, 1) 0%,
+  //   rgba(41, 201, 242, 1) 100%
+  // );
   box-sizing: border-box;
   overflow: hidden;
 }

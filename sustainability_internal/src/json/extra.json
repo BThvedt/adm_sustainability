@@ -1,0 +1,23 @@
+{
+  "navText": {
+    "e_back": "Prev",
+    "e_forward": "Next"
+  },
+  "resources": [],
+  "links": [
+    {
+      "name": "Sustainability Policies and Reports",
+      "link": "https://www.adm.com/en-us/sustainability/sustainability-reports/"
+    },
+    {
+      "name": "Company Sustainability | ADM",
+      "link": "https://www.adm.com/en-us/sustainability/"
+    }
+  ],
+  "e_lessonNames": [
+    "1. Introduction",
+    "What's in Scope?",
+    "Exploring Scope 3",
+    "A Day<br>of Sustainability"
+  ]
+}

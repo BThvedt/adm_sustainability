@@ -231,3 +231,63 @@ ol {
     }
   }
 }
+
+.background-transition {
+  transition: background-image 1s;
+  background-size: cover;
+
+  // menu
+  &.menu-page {
+    background-image: url("../images/shared/cloud_background.png");
+  }
+
+  // lesson one
+  &.lesson-one-video {
+    background-image: url("../images/shared/cloud_background.png");
+  }
+
+  // lesson two
+  &.lesson-2-intro-one {
+    background-image: url("../images/shared/cloud_background.png");
+  }
+  &.lesson-2-intro-two {
+    background-image: url("../images/shared/cloud_background.png");
+  }
+  &.lesson-2-drag-and-drop-activity {
+    background-image: url("../images/shared/cloud_background.png");
+  }
+  &.lesson-2-conclusion {
+    background-image: url("../images/shared/cloud_background.png");
+  }
+
+  // lesson three
+  &.lesson-3-intro-one {
+    background-image: url("../images/shared/cloud_background.png");
+  }
+  &.lesson-3-intro-two {
+    background-image: url("../images/shared/cloud_background.png");
+  }
+  &.lesson-3-activity-class {
+    background-image: url("../images/shared/cloud_background.png");
+  }
+  &.lesson-3-conclusion {
+    background-image: url("../images/shared/cloud_background.png");
+  }
+
+  // lesson four
+  &.lesson-4-intro-one {
+    background-image: url("../images/shared/white_background.png");
+  }
+  &.lesson-4-intro-two {
+    background-image: url("../images/shared/white_background.png");
+  }
+  &.lesson-4-activity {
+    background-image: url("../images/shared/white_background.png");
+  }
+  &.lesson-4-conclusion {
+    background-image: url("../images/shared/white_background.png");
+  }
+  &.lesson-4-conclusion-page-2 {
+    background-image: url("../images/shared/white_background.png");
+  }
+}

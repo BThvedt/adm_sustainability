@@ -15,6 +15,21 @@ import {
 } from "./types"
 
 export const getters: GetterTree<MetaState, RootState> = {
+  getLockedLessonParts:
+    (state) =>
+    (payload: string): boolean[] => {
+      const lesson = payload
+      const { lockedLessonParts } = state.scorm.suspendedData
+
+      if (lockedLessonParts[lesson]) {
+        return lockedLessonParts[lesson]
+      } else {
+        return []
+      }
+    },
+  getModalShowing(state) {
+    return state.modalShowing
+  },
   isOnHiddenPage(state) {
     return state.isOnHiddenPage
   },
@@ -136,6 +151,9 @@ export const getters: GetterTree<MetaState, RootState> = {
   },
   getBodyClickTicker(state): number {
     return state.bodyClickedTicker
+  },
+  getWindowResizeTicker(state): number {
+    return state.windowResizeTicker
   },
   jsonLoaded(state): boolean {
     return state.jsonLoaded

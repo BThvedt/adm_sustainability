@@ -31,6 +31,12 @@ export default Vue.extend({
   },
   methods: {
     goToNextPage() {
+      // unlock the next section
+      this.$store.dispatch("meta/unlockLessonPart", {
+        lesson: "dayInTheLife",
+        part: 1, // zero indexed remember
+      })
+
       this.$store.dispatch("meta/goForward")
     },
   },

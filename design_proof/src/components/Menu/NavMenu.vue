@@ -18,7 +18,11 @@
             :h="sectionNames[currentSectionIndex - 1]"
             t="h3"
             v-else-if="currentSectionIndex >= 1"
-            class="header menu-section-name"
+            :class="`header menu-section-name ${
+              sectionNames[currentSectionIndex - 1].length > 25
+                ? 'long'
+                : 'short'
+            }`"
             key="sectionName"
           />
         </transition>
@@ -37,14 +41,25 @@
             class="tab"
             v-for="(subSection, index) in subSections"
             :key="index"
-            :class="{ active: index === activeTab }"
-            @click="tabClicked(index)"
+            :class="{
+              active: index === activeTab,
+              greyedOut: lockedSubSections[index],
+            }"
+            @click="tabClicked(index, lockedSubSections[index])"
           >
-            <p>{{ subSection.name }}</p>
+            <p class="tags-paragraph">
+              <font-awesome-icon
+                class="lock"
+                icon="lock"
+                v-if="lockedSubSections[index]"
+              />
+              {{ subSection.name }}
+            </p>
           </div>
           <div class="tabs-slider" ref="tabs-slider"></div>
         </div>
       </transition>
+
       <div id="nav-right-side" class="icons">
         <h2 id="menu-toggle" class="menu-icon" @click="menuToggle">
           <font-awesome-icon v-if="!open" icon="bars" class="hamburger-menu" />
@@ -149,14 +164,16 @@ export default Vue.extend({
         tabSlider.style.width = `${width}px`
       }
     },
-    tabClicked(index: number) {
-      this.activeTab = index
-      // now go to section and page
-      // find the page
-      let pageNum = this.subSections[index].page
-      this.$store.dispatch("meta/goToSubSection", {
-        pageIndex: pageNum,
-      })
+    tabClicked(index: number, isNotAllowed: boolean) {
+      if (!isNotAllowed) {
+        this.activeTab = index
+        // now go to section and page
+        // find the page
+        let pageNum = this.subSections[index].page
+        this.$store.dispatch("meta/goToSubSection", {
+          pageIndex: pageNum,
+        })
+      }
     },
     menuToggle() {
       // alert("asfd")
@@ -174,16 +191,37 @@ export default Vue.extend({
         this.$store.dispatch("meta/goToPage", { sectionIndex, pageIndex: 0 })
       }
     },
-    showGlossary() {
-      // alert("eh")
-      this.$emit("showGlossary")
-    },
+    // showGlossary() {
+    //   // alert("eh")
+    //   this.$emit("showGlossary")
+    // },
     goHome() {
       // this.$store.dispatch("meta/goToPage", { sectionIndex: 0, pageIndex: 0 })
       this.$store.dispatch("meta/goHome")
     },
   },
   computed: {
+    lockedSubSections(): boolean[] {
+      // hmm maybe I should have indexed the sections by number instead of name in this getter. Oh well
+      // remember, 0 is the Menu ..
+      let lessonName = ""
+      switch (this.currentSectionIndex) {
+        case 1:
+          lessonName = "intro"
+          break
+        case 2:
+          lessonName = "whatsInScope"
+          break
+        case 3:
+          lessonName = "exploringScope3"
+          break
+        case 4:
+          lessonName = "dayInTheLife"
+          break
+      }
+
+      return this.$store.getters["meta/getLockedLessonParts"](lessonName)
+    },
     // a computed getter
     showHomeButton() {
       let { currSection, currPage } =
@@ -229,9 +267,6 @@ export default Vue.extend({
     sectionNames(): string | undefined {
       const { e_lessonNames } =
         this.$store.getters["meta/getExtraJson"]("extra")
-
-      console.log("LESSON NAMES ARE")
-      console.log(e_lessonNames)
 
       return e_lessonNames ? e_lessonNames : undefined
     },
@@ -280,7 +315,7 @@ export default Vue.extend({
   left: 0;
   width: 100%;
   transition: 600ms all;
-  min-width: 900px;
+  min-width: 1000px;
   &.up {
     top: -45px;
     &:hover {
@@ -311,6 +346,7 @@ export default Vue.extend({
     position: relative;
     height: 50px;
     width: 400px;
+    z-index: 1;
     .logo {
       width: 60px;
       position: absolute;
@@ -318,7 +354,15 @@ export default Vue.extend({
     .menu-section-name {
       position: absolute;
       margin: 0;
-      margin-top: 0.45em;
+      font-size: 1.1em;
+      margin-top: 0.5em;
+
+      &.long {
+        margin-top: 0;
+        height: 100%;
+        line-height: 1.1em;
+        font-size: 1.1em;
+      }
     }
   }
 
@@ -328,6 +372,11 @@ export default Vue.extend({
     align-items: center;
     justify-content: center;
     height: 100%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 0;
+    z-index: 0;
 
     .tab {
       height: 100%;
@@ -336,8 +385,19 @@ export default Vue.extend({
       align-items: center;
       justify-content: center;
       cursor: pointer;
+      color: $gray;
       &:hover {
         color: $green;
+      }
+      &.greyedOut {
+        cursor: not-allowed;
+        opacity: 0.5;
+        &:hover {
+          color: $gray;
+        }
+        .lock {
+          margin-right: 0.5em;
+        }
       }
     }
   }
@@ -346,6 +406,8 @@ export default Vue.extend({
     width: 12%;
     display: flex;
     flex-direction: row-reverse;
+    position: relative;
+    z-index: 1;
 
     .menu-icon {
       cursor: pointer;

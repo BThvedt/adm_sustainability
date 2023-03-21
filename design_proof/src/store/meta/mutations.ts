@@ -19,6 +19,12 @@ import scorm from "@/scorm"
 import { ScormStatusString } from "@/types"
 
 export const mutations: MutationTree<MetaState> = {
+  setModalShowing(state, payload: boolean) {
+    state.modalShowing = payload
+  },
+  incrementResizeTicker(state) {
+    state.windowResizeTicker += 1
+  },
   incrementTicker(state) {
     state.bodyClickedTicker += 1
   },

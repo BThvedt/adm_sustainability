@@ -1,0 +1,10 @@
+{
+  "e_title": "About this Activity",
+  "e_subtitle": "The next activity will help you identify and prioritize the Top Three categories that ADM can control that have the greatest impact on scope 3 emission reduction.",
+  "e_listtitle": "Directions for completing the activity:",
+  "e_list": "<ol><li><p>Review the 15 categories on the chart at the left of the next activity screen.</p></li><li><p>Use the three scrollers to choose the Top Three categories, one at a time, that you think have the greatest impact on scope 3 emission reduction and that ADM can control.</p></li><li><p>Select Ok when you think you’ve found a category.</p></li></ol>",
+  "e_list_part_two": "<ol start='4'><li><p>The result of your choices will appear on the chart and be reflected on the Scope 3 Impact and ADM Control meters. Remember, not all categories are within ADM’s control nor make a large impact.</p></li><li><p>You have three tries to find the Top 3 categories. After that, if you choose incorrectly, the Top 3 will be revealed to you.</p></li></ol>",
+  "e_text": "<p>Don't worry about answering perfectly here! This activity is intended to help you learn more about the impact ADM can make on our scope 3 reduction goals.</p><p>When you’re ready, select Start to begin.</p>",
+  "e_nextButton": "Next",
+  "e_continueButton": "Start"
+}

@@ -1,0 +1,320 @@
+@import "IntroSelectReveal";
+@import "IntroDragAndDrop";
+@import "OnTheTeam";
+
+// #Asdf {
+//   background-image: url("../images/intro/tree-bkg.jpg");
+// }
+
+.module-page-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.big-box-shadow {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.35);
+}
+.slow-speed {
+  animation-duration: 1500ms !important;
+}
+.regular-speed {
+  animation-duration: 1000ms !important;
+}
+.medium-speed {
+  animation-duration: 600ms !important;
+}
+.fast-speed {
+  animation-duration: 300ms !important;
+}
+.very-fast-speed {
+  animation-duration: 150ms !important;
+}
+
+@font-face {
+  font-family: "DIN Next Slab Pro";
+  src: local("DIM Next Slab Pro"),
+    url("../fonts/DIN Next Slab Pro/DINNextSlabPro-Regular.ttf")
+      format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DIN Next Slab Pro";
+  src: local("DIM Next Slab Pro"),
+    url("../fonts/DIN Next Slab Pro/DINNextSlabPro-Medium.ttf")
+      format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DIN Next Slab Pro";
+  src: local("DIM Next Slab Pro"),
+    url("../fonts/DIN Next Slab Pro/DINNextSlabPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DIN Next Slab Pro";
+  src: local("DIM Next Slab Pro"),
+    url("../fonts/DIN Next Slab Pro/DINNextSlabPro-Light.ttf")
+      format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DIN Next Slab Pro";
+  src: local("DIM Next Slab Pro"),
+    url("../fonts/DIN Next Slab Pro/DINNextSlabPro-Italic.ttf")
+      format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "DIN Next Slab Pro";
+  src: local("DIM Next Slab Pro"),
+    url("../fonts/DIN Next Slab Pro/DINNextSlabPro-MediumIt.ttf")
+      format("truetype");
+  font-weight: medium;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "DIN Next Slab Pro";
+  src: local("DIM Next Slab Pro"),
+    url("../fonts/DIN Next Slab Pro/DINNextSlabPro-BoldItalic.ttf")
+      format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "DIN Next Slab Pro";
+  src: local("DIM Next Slab Pro"),
+    url("../fonts/DIN Next Slab Pro/DINNextSlabPro-LightItalic.ttf")
+      format("truetype");
+  font-weight: lighter;
+  font-style: italic;
+}
+
+body {
+  font-family: $cali;
+  font-size: $normal;
+}
+
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+ol {
+  padding-left: 1em;
+}
+
+.module-page-container {
+  padding: $pagePadding;
+  padding-top: calc(#{$menuHeight} + 1em);
+  box-sizing: border-box;
+}
+
+.module-page-container.text-image-page {
+  padding: $pagePadding;
+  padding-top: calc(#{$menuHeight} + #{$pagePadding});
+  box-sizing: border-box;
+}
+
+.big-title {
+  font-family: $din;
+  font-weight: 400;
+  color: $darkBlue;
+  font-size: $xl;
+  margin: 0.5em 0em;
+}
+
+.big-subtitle {
+  font-size: $med;
+  color: $darkBlue;
+  font-weight: normal;
+  font-style: italic;
+  margin: 0.5em 0em;
+}
+
+.header {
+  color: $darkBlue;
+  font-weight: bold;
+}
+
+.small-text {
+  font-size: $normal;
+  font-weight: normal;
+}
+
+.med-text {
+  font-size: $med;
+  font-weight: normal;
+}
+
+.button {
+  background: $darkBlue;
+  color: white;
+  width: 170px;
+  height: 40px;
+  border-radius: 20px 0 20px 20px;
+  font-size: $button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: $fast-transition;
+  &:hover {
+    background: $buttonHover;
+  }
+  &.back-button {
+    border-radius: 0 20px 20px 20px;
+  }
+  &.large-button {
+    font-weight: bold;
+    min-width: 230px;
+    min-height: 54px;
+    border-radius: 27px 0 27px 27px;
+    p {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.plain-btn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+.italic-prompt {
+  color: $darkBlue;
+  font-style: italic;
+}
+
+// @media screen and (max-width: 1180px) {
+//   body {
+//     font-size: $s-normal;
+//   }
+
+//   #stage {
+//     .module-page-container {
+//       padding: $s-pagePadding;
+//       padding-top: calc(#{$menuHeight} + #{$s-pagePadding});
+//     }
+
+//     .big-title {
+//       font-size: $s-xl;
+//     }
+
+//     .big-subtitle {
+//       font-size: $s-med;
+//     }
+
+//     .button {
+//       font-size: $s-button;
+//     }
+
+//     .small-text {
+//       font-size: $s-normal;
+//     }
+
+//     .med-text {
+//       font-size: $s-med;
+//       font-weight: normal;
+//     }
+//   }
+// }
+
+$grad-background: linear-gradient(
+  180deg,
+  hsla(188, 100%, 87%, 1) 0%,
+  hsla(0, 0%, 100%, 1) 100%
+);
+
+.background-transition {
+  transition: background-image 1s;
+  background-size: cover;
+
+  // menu
+  &.menu-page {
+    background-image: url("../images/shared/cloud_background.png");
+  }
+
+  // lesson one
+  &.lesson-one-welcome-page {
+    background-image: url("../images/shared/bg-blue-grad.png");
+  }
+  &.lesson-one-video {
+    background-image: url("../images/shared/white_background.png");
+  }
+
+  // lesson two
+  &.lesson-2-intro-one {
+    background-image: url("../images/shared/bg-blue-grad.png");
+  }
+  &.lesson-2-intro-two {
+    background-image: url("../images/shared/bg-blue-grad.png");
+  }
+  &.lesson-2-drag-and-drop-activity {
+    background-image: url("../images/shared/white_background.png");
+  }
+  &.lesson-2-conclusion {
+    background-image: url("../images/shared/bg-blue-grad.png");
+  }
+
+  // lesson three
+  &.lesson-3-select-reveal {
+    background-image: url("../images/shared/bg-blue-grad.png");
+  }
+  &.lesson-3-instructions-one {
+    background-image: url("../images/shared/bg-blue-grad.png");
+  }
+  &.lesson-3-instructions-two {
+    background-image: url("../images/shared/bg-blue-grad.png");
+  }
+  &.lesson-3-activity-class {
+    background-image: url("../images/shared/white_background.png");
+  }
+  &.lesson-3-activity-feedback {
+    background-image: url("../images/shared/white_background.png");
+  }
+  &.lesson-3-conclusion {
+    background-image: url("../images/shared/bg-blue-grad.png");
+  }
+  &.lesson-3-conclusion-two {
+    background-image: url("../images/shared/bg-blue-grad.png");
+  }
+
+  // lesson four
+  &.lesson-4-intro-one {
+    background-image: url("../images/shared/bg-blue-grad.png");
+  }
+  &.lesson-4-intro-two {
+    background-image: url("../images/shared/bg-blue-grad.png");
+  }
+  &.lesson-4-activity {
+    background-image: url("../images/shared/white_background.png");
+  }
+  &.lesson-4-conclusion {
+    background-image: url("../images/shared/bg-blue-grad.png");
+  }
+  &.final-course-conclusion {
+    background-image: url("../images/shared/bg-blue-grad.png");
+  }
+}

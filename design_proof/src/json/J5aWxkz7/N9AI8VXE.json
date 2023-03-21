@@ -48,34 +48,37 @@
           "id": 2,
           "e_title": "Choose the Best Answer",
           "e_prompt": "Q2 Lorem ipsum dolor sit amet, consectetur elitin elemen tum neque ac purus vulpute sceleris que nec at arcu. Nulla hendin sed gras vida ante tellus gravida non? (correct choice is 1)",
-          "e_instructions": "Which is the best answer?",
-          "questionType": "multiple-choice",
+          "e_instructions": "Which is the best answer? Choose all that Apply",
+          "questionType": "multiple-select",
           "questionImage": "timeline/businessman-coffee-shop.png",
           "e_character": "Coworker",
+          "e_submitText": "Submit",
           "points": 10,
+          "feedback": {
+            "correct": {
+              "e_title": "You got it!",
+              "e_text": "<p>Lorem ipsum dolor sit amet, consectetur elitin elemen tum neque ac purus vulputate.</p>"
+            },
+            "incorrect": {
+              "e_title": "Not quite.",
+              "e_text": "<p>Lorem ipsum dolor sit amet, consectetur elitin elemen tum neque ac purus vulputate.</p>"
+            }
+          },
           "choices": [
             {
-              "e_text": "Lorem ipsum dolor sit amet, consectetur elitin elemen tum neque ac purus vulputate. (correct)",
-              "feedback": {
-                "e_title": "Great Choice!",
-                "e_text": "<p>Lorem ipsum dolor sit amet, consectetur elitin elemen tum neque ac purus vulputate.</p>"
-              },
+              "e_text": "<p>Lorem ipsum dolor sit amet, consectetur elitin elemen tum neque ac purus vulputate.</p>",
               "correct": true
             },
             {
-              "e_text": "Lorem ipsum dolor sit amet, consectetur elitin elemen tum neque ac purus vulputate.",
-              "feedback": {
-                "e_title": "Not quite.",
-                "e_text": "<p>Lorem ipsum dolor sit amet, consectetur elitin elemen tum neque ac purus vulputate.</p>"
-              },
+              "e_text": "<p>Lorem ipsum dolor sit amet, consectetur elitin elemen tum neque ac purus vulputate.</p>",
+              "correct": true
+            },
+            {
+              "e_text": "<p>Lorem ipsum dolor sit amet, consectetur elitin elemen tum neque ac purus vulputate.</p>",
               "correct": false
             },
             {
-              "e_text": "Lorem ipsum dolor sit amet, consectetur elitin elemen tum neque ac purus vulputate.",
-              "feedback": {
-                "e_title": "Not quite.",
-                "e_text": "<p>Lorem ipsum dolor sit amet, consectetur elitin elemen tum neque ac purus vulputate.</p>"
-              },
+              "e_text": "<p>Lorem ipsum dolor sit amet, consectetur elitin elemen tum neque ac purus vulputate.</p>",
               "correct": false
             }
           ]

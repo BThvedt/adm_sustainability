@@ -1,0 +1,106 @@
+{
+  "e_title": "30b58cdc-9d3f-40f0-8769-3d24eb4927a8",
+  "e_feedback_all_three": "d8da2ddc-ad4e-4c18-8897-5f83b01ecaa4",
+  "e_feedback_two_right": "edfcc602-67a4-429c-8eac-5eea614260f4",
+  "e_feedback_one_right": "a5fa4a75-c51e-4e65-81d4-065b3b753f45",
+  "e_feedback_zero_right": "9cf8c682-6040-47f3-974b-cdb8860e598b",
+  "e_bar_graph_title": "cac1336e-d4e7-4c77-937d-a86530236efc",
+  "e_nextButton": "8cd7a592-61e2-4db2-8195-b70ee6dfc204",
+  "final_feedback": {
+    "purchased_goods": "The <strong>purchased goods and services</strong> category has a high impact (nearly 2/3 of our scope 3 footprint) and high ADM leverage via regenerative agriculture practices and grower relationships. This category includes anything we procure to run our business that we can control for scope 3 reduction, such as the crops to process, containers for packaging, resins in wastewater treatment centers, IT call centers in India, etc.",
+    "fera": "Even though <strong>FERA</strong> (Fuel and Energy Related Activities) has a low impact in scope 3 emissions, the ADM leverage is extremely high. Scope 1 and 2 emissions come from burning coal and gas, but scope 3 impact comes from burning fuel and ADM chooses the fuel we use.",
+    "upstream_transportation": "<strong>Upstream transportation</strong> has a moderate scope 3 impact with high ADM leverage. This category includes transportation of our product before processing, all commodities (corn, soy, wheat), any transportation paid for, so finished product going to the customer. If ocean shipping, for example, soybeans from Brazil to Europe, ADM can choose the method and vessel type. We can choose newer ships with better equipment and more fuel efficiency to help reduce scope 3 emissions."
+  },
+  "categories": [
+    {
+      "id": 1,
+      "title": "Purchased Goods and Services",
+      "score": 16,
+      "correct": true
+    },
+    {
+      "id": 2,
+      "title": "Capital Goods",
+      "score": 2,
+      "correct": false
+    },
+    {
+      "id": 3,
+      "title": "FERA",
+      "score": 7,
+      "correct": true
+    },
+    {
+      "id": 4,
+      "title": "Upstream Transportation",
+      "score": 7,
+      "correct": true
+    },
+    {
+      "id": 5,
+      "title": "Waste",
+      "score": 4,
+      "correct": false
+    },
+    {
+      "id": 6,
+      "title": "Business Travel",
+      "score": 4,
+      "correct": false
+    },
+    {
+      "id": 7,
+      "title": "Employee Commuting",
+      "score": 2,
+      "correct": false
+    },
+    {
+      "id": 8,
+      "title": "Upstream Leased Assets",
+      "score": 1,
+      "correct": false
+    },
+    {
+      "id": 9,
+      "title": "Downstream Transportation",
+      "score": 4,
+      "correct": false
+    },
+    {
+      "id": 10,
+      "title": "Processing of Sold Products",
+      "score": 5,
+      "correct": false
+    },
+    {
+      "id": 11,
+      "title": "Use of sold products",
+      "score": 2,
+      "correct": false
+    },
+    {
+      "id": 12,
+      "title": "EoL of sold products",
+      "score": 5,
+      "correct": false
+    },
+    {
+      "id": 13,
+      "title": "Use of sold Products",
+      "score": 4,
+      "correct": false
+    },
+    {
+      "id": 14,
+      "title": "Franchises",
+      "score": 1,
+      "correct": false
+    },
+    {
+      "id": 15,
+      "title": "Investments",
+      "score": 4,
+      "correct": false
+    }
+  ]
+}

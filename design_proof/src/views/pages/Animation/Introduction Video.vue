@@ -3,6 +3,7 @@
     <div id="intro-vid" class="module-page-container">
       <div id="video-wrapper">
         <video
+          autoplay
           controls
           ref="videoPlayer"
           @loadedmetadata="setDuration"
@@ -34,6 +35,8 @@ import Vue from "vue"
 import PageBase from "@/components/PageBase.vue"
 import E from "@/components/editable/E.vue"
 import { TEnter, TExit, TTimes } from "@/types"
+// import { VideoPlayer } from "vue-video-player"
+// import "video.js/dist/video-js.css"
 
 export default Vue.extend({
   name: "Menu",

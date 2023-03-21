@@ -1,0 +1,237 @@
+{
+  "e_title": "Completing Your Toolkit",
+  "e_prompt": "Drag and drop each scenario icon to the right scope level. Incorrect drops will go back in line. Hover over the scope levels for their definitions.",
+  "e_subTitle": "Drag the icon for each description to the correct tool.",
+  "e_subTitle_2": "Before you can move on, select each tool to explore it in more detail.",
+  "introModal": {
+    "e_title": "You Have an Entire Toolkit!",
+    "e_text": "<p>The Quality focus is linked to more tools than just the HOQ/LHOQ and the DQM.</p><p>Let’s explore these additional, common tools identified for use in 3M | Grow to complete your toolkit. See if you can identify which descriptions match each tool before learning more about each of them.</p>"
+  },
+  "conclusionModal": {
+    "e_title": "But wait, there’s more!",
+    "e_text": "<p>The DQM, HOQ/LHOQ, Quality Plan, test method analysis/Data Package and more… you’re now familiar with the common tools the Quality focus uses in new product commercialization.</p><p>However, this is not an exhaustive list of the tools in Quality’s toolkit. Depending on the project or division, Quality will also inspect or evaluate tools led by other focus areas. One example is the Manufacturing Activities and Toolkit. The Quality Plan is a key input used to complete the Manufacturing Activities, such as production specs and test methods.</p><p>Connect with leadership in your division to learn if there are additional tools (or tasks!) with which you should be familiar.<br><br>Select Continue to return to the Home screen.</p><p></p>"
+  },
+  "incorrectText": {
+    "e_prompt": "Incorrect ",
+    "e_tryAgain": "Next"
+  },
+  "correctText": {
+    "e_prompt": "Correct feedback goes here...",
+    "e_text": "Continue"
+  },
+  "finalFeedback": {
+    "e_title": "Final Feedback Title",
+    "e_text": "Final Feedback Text",
+    "e_button": "Complete Section"
+  },
+  "toolDropAreas": [
+    {
+      "e_title": "Scope 1",
+      "e_subtitle": "Direct Emissions",
+      "e_description": "Direct GHG emissions that occur from sources that are controlled or owned by ADM.",
+      "id": 1
+    },
+    {
+      "e_title": "Scope 2",
+      "e_subtitle": "Indirect Emissions",
+      "e_description": "Emissions that ADM causes indirectly when the energy we purchase or use is produced.",
+      "id": 2
+    },
+    {
+      "e_title": "Scope 3",
+      "e_subtitle": "Indirect Emissions",
+      "e_description": "Emissions not produced by ADM, but by those that we're indirectly responsible for up and down our value chain.",
+      "id": 3
+    }
+  ],
+  "toolDraggables": [
+    {
+      "id": 1,
+      "icon": "electricity-purchased.png",
+      "e_text": "Electricity ADM purchases from an electric grid or utility company",
+      "correctDropArea": 2,
+      "e_clickRevealScreens": [
+        "",
+        ""
+      ],
+      "feedback": {
+        "e_correct": {
+          "e_title": "You got it!",
+          "e_text": "Scope 2 are emissions that ADM causes indirectly when the energy we purchase and use is produced. Electricity purchased from an electric grid or utility company is generated off-site, so they are considered indirect emissions."
+        },
+        "e_incorrect": [
+          {
+            "e_title": "Sorry, that’s incorrect.",
+            "e_text": "Hint: This is energy ADM purchases. You'll have a chance to try this again."
+          },
+          {
+            "e_title": "Sorry, that’s still incorrect",
+            "e_text": "We’ve placed it for you. Scope 2 are emissions that ADM causes indirectly when the energy we purchase and use is produced. Electricity purchased from an electric grid or utility company is generated off-site, so they are considered indirect emissions."
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "icon": "emissions-on-farm.png",
+      "e_text": "Emissions on a farm from commodities purchased by ADM",
+      "correctDropArea": 3,
+      "e_clickRevealScreens": [
+        "",
+        "",
+        ""
+      ],
+      "feedback": {
+        "e_correct": {
+          "e_title": "That’s right!",
+          "e_text": "Scope 3 emissions are the result of activities from assets not owned or controlled by ADM, but indirectly affect our value chain."
+        },
+        "e_incorrect": [
+          {
+            "e_title": "Sorry, that’s incorrect.",
+            "e_text": "Hint: These are assets not owned or controlled by ADM. You'll see this one again."
+          },
+          {
+            "e_title": "Sorry, that’s still incorrect.",
+            "e_text": "We’ve placed it for you. Scope 3 emissions are the result of activities from assets not owned or controlled by ADM, but indirectly affects our value chain."
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "icon": "steam-purchased.png",
+      "e_text": "Steam purchased from a third party",
+      "correctDropArea": 2,
+      "e_clickRevealScreens": [
+        "",
+        "",
+        ""
+      ],
+      "feedback": {
+        "e_correct": {
+          "e_title": "Well done!",
+          "e_text": "Scope 2 emissions include indirect greenhouse gas emissions from purchased or acquired energy, like steam, generated off-site and consumed by ADM."
+        },
+        "e_incorrect": [
+          {
+            "e_title": "Sorry, that’s incorrect.",
+            "e_text": "Hint: The steam is generated off-site. This one goes back in line."
+          },
+          {
+            "e_title": "Sorry, that’s still incorrect.",
+            "e_text": "We’ve placed it for you. Scope 2 emissions include indirect greenhouse gas emissions from purchased or acquired energy, like steam, generated off-site and consumed by ADM."
+          }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "icon": "coal-burned.png",
+      "e_text": "Coal burned in ADM boilers",
+      "correctDropArea": 1,
+      "e_clickRevealScreens": [
+        "",
+        "",
+        ""
+      ],
+      "feedback": {
+        "e_correct": {
+          "e_title": "Good!",
+          "e_text": "Emissions associated with fuel combustion in boilers are scope 1 emissions, which are&nbsp;direct greenhouse emissions that occur from sources controlled or owned by ADM.&nbsp;"
+        },
+        "e_incorrect": [
+          {
+            "e_title": "Sorry, that’s incorrect",
+            "e_text": "Hint: The coal is burned in ADM boilers. You'll get another chance to place this correctly."
+          },
+          {
+            "e_title": "Sorry, that’s still incorrect.",
+            "e_text": "We’ve placed it for you. Emissions associated with fuel combustion in boilers are scope 1 emissions, which are&nbsp;direct greenhouse emissions that occur from sources controlled or owned by ADM."
+          }
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "icon": "customers-process.png",
+      "e_text": "Emissions when our customers process the ingredients they buy from ADM ",
+      "correctDropArea": 3,
+      "e_clickRevealScreens": [
+        "",
+        "",
+        ""
+      ],
+      "feedback": {
+        "e_correct": {
+          "e_title": "Exactly!",
+          "e_text": "These are indirect emissions – meaning those not produced by ADM – but they differ from scope 2 as they cover emissions produced by our customers using our products."
+        },
+        "e_incorrect": [
+          {
+            "e_title": "Sorry, that’s incorrect.",
+            "e_text": "These are indirect emissions – meaning those not produced by ADM – but they differ from Scope 2 as they cover emissions produced by our customers using our products."
+          },
+          {
+            "e_title": "Sorry, that’s still incorrect.",
+            "e_text": "We’ve placed it for you. These are indirect emissions – meaning those not produced by ADM – but they differ from Scope 2 as they cover emissions produced by our customers using our products."
+          }
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "icon": "diesel-burned.png",
+      "e_text": "Diesel burned in our trucks and boats",
+      "correctDropArea": 1,
+      "e_clickRevealScreens": [
+        "",
+        "",
+        ""
+      ],
+      "feedback": {
+        "e_correct": {
+          "e_title": "Way to go!",
+          "e_text": "Scope 1 emissions are direct emissions by ADM-owned and controlled resources. Scope 1 emissions include mobile combustion from burning fuel by vehicles owned or controlled by ADM."
+        },
+        "e_incorrect": [
+          {
+            "e_title": "Sorry, that’s incorrect.",
+            "e_text": "Hint: ADM owns the trucks and boats. You'll get another try at this one."
+          },
+          {
+            "e_title": "Sorry, that’s still incorrect.",
+            "e_text": "We’ve placed it for you. Scope 1 emissions are direct emissions by ADM-owned and controlled resources. Scope 1 emissions include mobile combustion from burning fuel by vehicles owned or controlled by ADM."
+          }
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "icon": "employees-commute.png",
+      "e_text": "Employee commuting and business travel",
+      "correctDropArea": 3,
+      "e_clickRevealScreens": [
+        "",
+        "",
+        ""
+      ],
+      "feedback": {
+        "e_correct": {
+          "e_title": "You got it!",
+          "e_text": "Commuting emissions are scope 3 because&nbsp;they are created indirectly by ADM. While ADM doesn't directly create these emissions, the people supporting us do."
+        },
+        "e_incorrect": [
+          {
+            "e_title": "Sorry, that’s incorrect.",
+            "e_text": "Hint: ADM doesn’t directly create these emissions. Please try again."
+          },
+          {
+            "e_title": "Sorry, that’s still incorrect.",
+            "e_text": "We’ve placed it for you. Commuting emissions are scope 3 because they're created indirectly by ADM. While ADM doesn't directly create these emissions, the people supporting us do."
+          }
+        ]
+      }
+    }
+  ]
+}

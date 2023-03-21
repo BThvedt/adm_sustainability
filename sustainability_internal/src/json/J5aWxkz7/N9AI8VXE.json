@@ -1,0 +1,393 @@
+{
+  "e_prompt": "Read each scenario and choose your response.",
+  "e_tryAgain": "Try Again",
+  "timeslots": [
+    {
+      "id": 1,
+      "e_time": "8AM",
+      "e_continue": "Continue",
+      "slotType": "questions",
+      "questions": [
+        {
+          "id": 1,
+          "e_title": "Choose the Best Answer",
+          "e_prompt": "You meet a friend at a coffee shop this morning. He tells you he just read an article about ADM investing in many sustainability efforts. He asks, “Isn’t that really just to help address your corporate sustainability goals?”",
+          "e_instructions": "After thanking him for the question, what do you say?<br>Choose the <strong><u>two</u></strong> best responses.",
+          "questionType": "multiple-select",
+          "questionImage": "timeline/day-life-8am-1.jpg",
+          "e_character": "Friend",
+          "e_submitText": "Submit",
+          "points": 10,
+          "feedback": {
+            "correct": {
+              "e_title": "That's Right!",
+              "e_text": "<p>Sustainability serves as a growth driver for ADM. For example, as we make progress on our own climate goals, we can also partner with our downstream customers to help them address their climate goals, which can lead to new business opportunities and strengthen customer relationships and longer-term supply agreements. Similarly, as we engage with farmers in regenerative ag practices and other programs, we can help them protect the future of their farms by improving soil and water health.</p>"
+            },
+            "incorrect": {
+              "e_title": "Sorry, that’s incorrect. ",
+              "e_text": "<p>Sustainability goes beyond corporate goals and investor pressure. Try again.</p>"
+            },
+            "incorrect_second": {
+              "e_title": "Sorry, that’s still not quite right.",
+              "e_text": "<p>The correct responses are shown.</p><p>Sustainability serves as a growth driver for ADM. For example, as we make progress against our own climate goals, we can also partner with our downstream customers to help them address their climate goals, which can lead to new business opportunities, and strengthen customer relationships and longer-term supply agreements. Similarly, as we engage with farmers in regenerative ag practices and other programs, we can help them protect the future of their farms by improving soil health, water quality, and profitability.</p>"
+            }
+          },
+          "choices": [
+            {
+              "e_text": "Yes, our sustainability efforts are solely to address ADM's corporate goals.",
+              "correct": false
+            },
+            {
+              "e_text": "We have a lot of investor pressure on this at the moment.",
+              "correct": false
+            },
+            {
+              "e_text": "Sustainability is linked to our corporate purpose and is the right thing to do for our employees and communities.",
+              "correct": true
+            },
+            {
+              "e_text": "Sustainability is a strategic growth driver for both ADM and our upstream and downstream customers. ",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "e_title": "Choose the Best Answer",
+          "e_prompt": "Your friend nods in understanding and then asks, “I’m not sure how ADM helps its customers with their sustainability goals. I’m sure it’s connected to your goals, but I don’t see how.”",
+          "e_instructions": "What do you say? Choose the <strong><u>two</strong></u> best responses.",
+          "questionType": "multiple-select",
+          "questionImage": "timeline/day-life-8am-2.jpg",
+          "e_character": "Friend",
+          "e_submitText": "Submit",
+          "points": 10,
+          "feedback": {
+            "correct": {
+              "e_title": "You got it!",
+              "e_text": "<p>ADM's footprint and supply chain are connected to our downstream customers and linked to their environmental footprints. ADM represents a part of our downstream customers’ scope 3 emissions. So, as we reduce the GHG emissions or other environmental impacts within our supply chains, we in turn are reducing our customers' scope 3 emissions and environmental impact.</p>"
+            },
+            "incorrect": {
+              "e_title": "Sorry, that’s incorrect.",
+              "e_text": "<p>Consider how ADM is connected to our customers. Try again.</p>"
+            },
+            "incorrect_second": {
+              "e_title": "Sorry, that’s still not quite right. The correct responses are shown.",
+              "e_text": "<p>ADM supply chain is connected to our downstream customers and linked to their environmental footprints. ADM represents a part of our downstream customers’ scope 3 emissions. So, as we reduce the GHG emissions or other environmental impacts within our supply chains we in turn are reducing our customers scope 3 emissions and environmental impact.</p>"
+            }
+          },
+          "choices": [
+            {
+              "e_text": "ADM’s supply chain is connected to our downstream customers and linked to their environmental footprints.",
+              "correct": true
+            },
+            {
+              "e_text": "The theory behind sustainability is great, but in reality, we have no impact on our customers.",
+              "correct": false
+            },
+            {
+              "e_text": "Actually, our customer impact is minimal and indirect.",
+              "correct": false
+            },
+            {
+              "e_text": "As ADM reduces our scope 3 emissions within our operations and supply chain, we in turn are reducing our customers scope 3 emissions.",
+              "correct": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "e_time": "11AM",
+      "e_continue": "Continue",
+      "slotType": "questions",
+      "questions": [
+        {
+          "id": 1,
+          "e_title": "Choose the Best Answer",
+          "e_prompt": "Your morning is moving along. You’re at a sales meeting and your customer asks, “What are you doing to reduce your scope 3 emissions that could impact your customers' scope 3 emissions?\"",
+          "e_instructions": "What do you say? Choose the <strong><u>two</strong></u> best responses.",
+          "questionType": "multiple-select",
+          "questionImage": "timeline/day-life-11am-1.jpg",
+          "e_character": "Customer",
+          "e_submitText": "Submit",
+          "points": 10,
+          "feedback": {
+            "correct": {
+              "e_title": "Good job!",
+              "e_text": "<p>ADM’s largest effort to reduce scope 3 is to invest and expand regenerative agriculture and to prevent deforestation across many of the crops we originate including corn, soy, and wheat. By working with farmers on implementing and measuring these practices, we can lower GHG emissions and improve water quality and soil health. This directly translates into the most impactful way that ADM can reduce its scope 3 footprint and how we can help our customers lower their scope 3 emissions and achieve their climate goals.</p><p>Our Strive 35 program aligns with global sustainable objectives and leverages efforts to reduce the environmental impact in our processes.</p>"
+            },
+            "incorrect": {
+              "e_title": "Sorry, that’s incorrect.",
+              "e_text": "<p>Consider the primary practice we promote and engage in to reduce our scope 3 emissions. Try again.</p>"
+            },
+            "incorrect_second": {
+              "e_title": "Sorry, that’s still not quite right. The correct responses are shown.",
+              "e_text": "<p>ADM’s largest effort to reduce scope 3 is to invest and expand regenerative agriculture and to prevent deforestation across many of the crops we originate including corn, soy, and wheat. By working with farmers on implementing and measuring these practices, we can lower GHG emissions and improve water quality and soil health. This directly translates into the most impactful way that ADM can reduce its scope 3 footprint and directly translates into how we can help our customers lower their scope 3 emissions and achieve their climate goals.</p>"
+            }
+          },
+          "choices": [
+            {
+              "e_text": "ADM is enforcing strict policies to ensure our customers are reducing their scope 3 emissions.",
+              "correct": false
+            },
+            {
+              "e_text": "Our largest effort to reduce scope 3 is to invest and expand regenerative agriculture and to prevent deforestation.",
+              "correct": true
+            },
+            {
+              "e_text": "ADM is implementing Strive 35 across our facilities.",
+              "correct": true
+            },
+            {
+              "e_text": "<p>We’re following our customers’ leads on scope 3 emissions. What is your company doing?",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "e_title": "Choose the Best Answer",
+          "e_prompt": "Your customer responds, “I’m interested in learning more about how we can collaborate on scope 3 reduction goals. How does ADM interact with customers on achieving these goals leveraging regenerative ag?”",
+          "e_instructions": "What do you say? Choose the <strong><u>three</strong></u> best responses.",
+          "questionType": "multiple-select",
+          "questionImage": "timeline/day-life-11am-2.jpg",
+          "e_character": "Customer",
+          "e_submitText": "Submit",
+          "points": 10,
+          "feedback": {
+            "correct": {
+              "e_title": "Excellent!",
+              "e_text": "<p>ADM starts by understanding our customers’ goals and identifying areas where we can help them in the short and long term. If the customer has a scope 3 reduction target, we then map and analyze the customer's business, e.g., what they are buying, where they are sourcing it from, and based on their supply shed, where ADM can provide solutions and implement regenerative ag practices.</p><p>Once the programs are implemented, we then measure and track progress and impact to provide reporting metrics and help the customer account for GHG inventory.</p><p>Regen ag and preventing deforestation are ADM’s big levers for helping customers reduce their scope 3. We implement the program in a tailored way that is linked to the customer's supply shed and sourcing areas. This is not just a one size fits all.</p>"
+            },
+            "incorrect": {
+              "e_title": "Sorry, that’s incorrect.",
+              "e_text": "<p>Choose three actions ADM can take to support our customers’ scope 3 reduction goals. Try again.</p>"
+            },
+            "incorrect_second": {
+              "e_title": "Sorry, that’s still not quite right. The correct responses are shown.",
+              "e_text": "<p>ADM starts by understanding our customers’ goals and identifying areas where we can help them in the short term and long term. If the customer has a scope 3 reduction target, we then map and analyze the customers’ business, e.g., what they are buying, where they are sourcing it from, and based on their supply shed, where ADM can provide solutions and implement regenerative ag practices. </p><p>Once the programs are implemented, we then measure and track progress and impact to provide reporting metrics and help the customer account for GHG inventory.</p><p>Regen ag and preventing deforestation are ADM’s big levers for helping customers reduce their scope 3. We implement the program in a tailored way that is linked to the customers’ supply shed and sourcing areas. This is not just a one size fits all.</p>"
+            }
+          },
+          "choices": [
+            {
+              "e_text": "We start by understanding our customers’ goals and identifying areas where we can help.",
+              "correct": true
+            },
+            {
+              "e_text": "We can provide solutions and implement regenerative ag practices aimed at reducing scope 3 emissions.",
+              "correct": true
+            },
+            {
+              "e_text": "Once the programs are implemented, we measure and track progress and impact to provide reporting metrics.",
+              "correct": true
+            },
+            {
+              "e_text": "We force farmer customers to implement strict certification standards.",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "e_time": "2PM",
+      "e_continue": "CoWorker",
+      "slotType": "questions",
+      "questions": [
+        {
+          "id": 1,
+          "e_title": "Choose the Best Answer",
+          "e_prompt": "A few hours later, you're in an internal meeting focused on a sustainability initiative. Your team member says, \"I understand we need to account for our supply chain emissions and that what happens on the farm gets allocated to us. But why all this talk about what happens when our products leave our facilities? We’ve sold them.&nbsp;It shouldn’t matter to us.",
+          "e_instructions": "What do you say? Choose <strong><u>two</u></strong> best responses.",
+          "questionType": "multiple-select",
+          "questionImage": "timeline/day-life-2pm-1.jpg",
+          "e_character": "Coworker",
+          "e_submitText": "Submit",
+          "points": 10,
+          "feedback": {
+            "correct": {
+              "e_title": "Nice response!",
+              "e_text": "<p>The \"cradle to gate\" method means looking at a product life cycle to the point where we sell it to a customer, meaning where it starts (on the farm) to where it leaves our facility. In corporate GHG accounting, we need to use the “cradle to grave” method, which counts everything that happens from the farm all the way through the packaging or when the product ends up used or in a landfill.&nbsp;It even includes the emissions from companies we invest in!</p>"
+            },
+            "incorrect": {
+              "e_title": "Sorry, that’s incorrect. ",
+              "e_text": "<p>Consider corporate GHG accounting and ADM's responsibility for our products. Try again.</p>"
+            },
+            "incorrect_second": {
+              "e_title": "Sorry, that’s still not quite right. The correct responses are shown.",
+              "e_text": "<p>Clarify that the largest source of scope 3 emissions is purchased goods and services, and employee or business travel has an extremely low impact on scope 3 emissions.</p><p>Also, you’ll want to encourage and commend your coworkers for thinking about the environment – every little bit helps – but use this as a pivot to what actually moves the needle for ADM. There are many things we can do as individuals.  Keep the message positive and encouraging.</p>"
+            }
+          },
+          "choices": [
+            {
+              "e_text": "I believe our scope 3 emissions are limited to sourcing and our upstream supply chain. We're not accountable beyond that.",
+              "correct": false
+            },
+            {
+              "e_text": "In corporate GHG accounting, everything counts that happens from the farm to the packaging or if the product ends up used or in a landfill.&nbsp;",
+              "correct": true
+            },
+            {
+              "e_text": "I agree! Once the product is delivered to our customer and we can no longer control what happens, we should not have to account for it.",
+              "correct": false
+            },
+            {
+              "e_text": "When considering our area of responsibility, we are actually accountable for the product after it leaves our facility. It even includes the emissions from companies we invest in!",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "e_title": "Choose the Best Answer",
+          "e_prompt": "Your coworker then says, \"That seems really unfair! If we have to count what our customer does with the product, and then what the consumer sends to the landfill, and our customer has to count our emissions and the consumer’s emissions, and we both have to count the farm emissions, the numbers are going to be huge!\"",
+          "e_instructions": "What do you say? Choose the <strong><u>two</strong></u> best responses.",
+          "questionType": "multiple-select",
+          "questionImage": "timeline/day-life-2pm-2.jpg",
+          "e_character": "Coworker",
+          "e_submitText": "Submit",
+          "points": 10,
+          "feedback": {
+            "correct": {
+              "e_title": "Way to educate your coworker!",
+              "e_text": "<p>There will always be double and triple counting when we look at scope 3, but that’s the beauty of regenerative agriculture programs.&nbsp;Since ADM and our customers and their customers all have to count the on-farm emissions in our inventories, we can all take credit for the same reductions.&nbsp;If our growers sequester carbon in the soil and reduce their emissions, our scope 3 footprint goes down, our customers’ footprints go down, and the farmer protects and rebuilds his soil.&nbsp;It’s a win for everyone.</p><p></p>"
+            },
+            "incorrect": {
+              "e_title": "Sorry, that’s incorrect.",
+              "e_text": "<p>While your coworker is right, there are benefits to regenerative agriculture programs. Try again.</p>"
+            },
+            "incorrect_second": {
+              "e_title": "Sorry, that’s still not quite right. The correct responses are shown.",
+              "e_text": "<p>You learned in this training the three key categories that make an impact on scope 3 emissions and that ADM has leverage – Purchased goods and services, FERA, and upstream transportation. It’s important to clarify that we need to focus on these areas. For example:</p><ul><li><p>Purchased goods and services – ADM employees could work to help advance our regenerative ag efforts related to their plant. </p></li><li><p>Upstream transportation – ADM employees could choose to use transportation methods that are more efficient or have better equipment with lower emissions.</p></li></ul>"
+            }
+          },
+          "choices": [
+            {
+              "e_text": "I agree! We need to ensure that we prevent double counting, so we should only have to account for what is in our control.",
+              "correct": false
+            },
+            {
+              "e_text": "Well, think about it this way. Since ADM and our customers and their customers all have to count the on-farm emissions in our inventories, we can all take credit for the same reductions.&nbsp;",
+              "correct": true
+            },
+            {
+              "e_text": "The good news is that when our growers reduce their emissions, our scope 3 footprint goes down and our customers’ footprints go down, The farmer protects and rebuilds the soil.",
+              "correct": true
+            },
+            {
+              "e_text": "The customers downstream should only account for what is in their control.",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "e_time": "4PM",
+      "e_continue": "Continue",
+      "slotType": "questions",
+      "questions": [
+        {
+          "id": 1,
+          "e_title": "Choose the Best Answer",
+          "e_prompt": "You are now meeting with a farmer who says he’s heard about ADM’s USDA grant. He also tells you he’s seen articles about our partnership with companies like Pepsi and wants to know about the benefits with ADM’s re:generations™ program.",
+          "e_instructions": "After thanking him for his interest, what do you say? Choose the <strong><u>two</strong></u> best responses.",
+          "questionType": "multiple-select",
+          "questionImage": "timeline/day-life-4pm-1.jpg",
+          "e_character": "Farmer Customer",
+          "e_submitText": "Submit",
+          "points": 10,
+          "feedback": {
+            "correct": {
+              "e_title": "Nice way to educate your customer!",
+              "e_text": "<p>ADM’s re:generations™ is our regenerative agriculture program that involves working with farmers to implement a series of agricultural practices that have a positive environmental impact including improved soil health and water quality, and lower GHG emissions.</p><p>By engaging with our downstream customers, ADM creates value at the farm level that can economically benefit the farm by creating a market for climate-smart commodities.</p>"
+            },
+            "incorrect": {
+              "e_title": "Sorry, that’s incorrect.",
+              "e_text": "<p>Try explaining the benefits of re:generation. Try again.</p>"
+            },
+            "incorrect_second": {
+              "e_title": "Sorry, that’s still not quite right. The correct responses are shown.",
+              "e_text": "<p>ADM’s re:generation is our regenerative agriculture program that involves working with farmers to implement a series of agricultural practices that have positive environmental impact including improved soil health and water quality and lower GHG emissions.</p><p>By engaging with our downstream customers, ADM is creating value at the farm level that can economically benefit the farm by creating a market for differentiated and high value grains.</p>"
+            }
+          },
+          "choices": [
+            {
+              "e_text": "I’d like to connect you with our Sustainability team so they can answer all your questions.",
+              "correct": false
+            },
+            {
+              "e_text": "You’ll need to follow ADM’s agricultural practices to a tee if you want to participate.",
+              "correct": false
+            },
+            {
+              "e_text": "The program involves working with farmers to implement agricultural practices with impacts including improved soil health and water quality and lower GHG emissions. ",
+              "correct": true
+            },
+            {
+              "e_text": "ADM is creating value that can benefit your farm by creating a market for climate-smart commodities.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "e_title": "Choose the Best Answer",
+          "e_prompt": "The farmer indicates he’d like to learn more and asks, “What are the practices to follow and if I was interested, how could I get involved?”",
+          "e_instructions": "After explaining the key practices, what do you say? Choose the <strong><u>two</strong></u> best responses.",
+          "questionType": "multiple-select",
+          "questionImage": "timeline/day-life-4pm-2.jpg",
+          "e_character": "Farmer Customer",
+          "e_submitText": "Submit",
+          "points": 10,
+          "feedback": {
+            "correct": {
+              "e_title": "Nice way to follow up with your customer!",
+              "e_text": "<p>ADM’s re:generations™ program is based on a set of key practices:</p><ul><li><p>Maintaining living roots in soils</p></li><li><p>Minimizing soil disturbance</p></li><li><p>Continuously covering bare soil</p></li></ul><p>These practices mainly involve the use of cover crops and implementing conservation or no-tillage.</p><p>We also focus on managing inputs responsibly, such as fertilizers and pesticides, and maximizing diversity through crop rotation and edge of field practices.</p><p>The ADM program is flexible so farmers can choose to start as simply as collecting data and/or implementing one or two practices.</p><p>To get started, farmers can contact their local origination manager who will collect some basic information and help them enroll via our digital platform.</p>"
+            },
+            "incorrect": {
+              "e_title": "Sorry, that’s incorrect. ",
+              "e_text": "<p>Try explaining the benefits of re:generation. Try again.</p>"
+            },
+            "incorrect_second": {
+              "e_title": "Sorry, that’s still not quite right. The correct responses are shown.",
+              "e_text": "<p>ADM’s re:generation program is based on a set of key practices:</p><ul><li><p>Maintaining living roots in soils</p></li><li><p>Minimizing soil disturbance</p></li><li><p>Continuously covering bare soil</p></li></ul><p>These practices mainly involve the use of cover crops and implementing conservations or no-tillage</p><p>We also focus on managing inputs responsibly, such as fertilizers and pesticides and maximizing diversity through crop rotation and edge of field practices.</p><p>The ADM program is flexible so farmers can choose to start as simply as collecting data and/or implementing one or two practices. </p><p>To get started, farmers can contact their local origination manager who will collect some basic information and help them enroll via our digital platform.</p>"
+            }
+          },
+          "choices": [
+            {
+              "e_text": "The program is flexible, so you can choose to start as simply as collecting data and implementing just one or two practices.",
+              "correct": true
+            },
+            {
+              "e_text": "It’s basically a generic program and you can get involved by implementing any sustainable agricultural practice.",
+              "correct": false
+            },
+            {
+              "e_text": "I’d recommend you refrain from getting involved until you can implement all the regenerative ag practices.",
+              "correct": false
+            },
+            {
+              "e_text": "You can contact your local origination manager who will collect some basic information and help you enroll via our digital platform.",
+              "correct": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "e_time": "End of Day",
+      "e_continue": "Next",
+      "slotType": "text",
+      "image": "timeline/day-life-eod.jpg",
+      "text": {
+        "e_title": "How did you do?",
+        "e_text": "<p>It’s been a long day of responding to sustainability questions! Now you’re ready for real-world questions from friends, coworkers, and customers. If you like, you can retry this activity to hone your conversation skills. Otherwise, select Next to continue.</p>"
+      }
+    }
+  ]
+}

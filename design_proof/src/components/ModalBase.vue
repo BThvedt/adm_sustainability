@@ -33,11 +33,12 @@ export default Vue.extend({
       this.$store.dispatch("meta/bodyClicked")
     },
     async show() {
+      this.$store.commit("meta/setModalShowing", true)
       await Promise.all([
-        (this.$refs["bkgTransition"] as any)?.show(
-          TEnter.FADE_IN,
-          TDuration.MEDIUM
-        ),
+        // (this.$refs["bkgTransition"] as any)?.show(
+        //   TEnter.FADE_IN,
+        //   TDuration.MEDIUM
+        // ),
         (this.$refs["modalTranisition"] as any)?.show(
           TEnter.FADE_IN_DOWN,
           TDuration.MEDIUM
@@ -46,15 +47,16 @@ export default Vue.extend({
       return new Promise<void>((resolve) => resolve())
     },
     async hide() {
+      this.$store.commit("meta/setModalShowing", false)
       await Promise.all([
         (this.$refs["modalTranisition"] as any)?.hide(
           TExit.FADE_OUT_UP,
           TDuration.MEDIUM
         ),
-        (this.$refs["bkgTransition"] as any)?.hide(
-          TExit.FADE_OUT,
-          TDuration.MEDIUM
-        ),
+        // (this.$refs["bkgTransition"] as any)?.hide(
+        //   TExit.FADE_OUT,
+        //   TDuration.MEDIUM
+        // ),
       ])
 
       return new Promise<void>((resolve) => resolve())
@@ -108,11 +110,12 @@ export default Vue.extend({
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 2em;
 
   #modal-base {
     width: 70%;
     background: white;
-    outline: 1px solid black;
+    outline: 1px solid $darkBlue;
 
     position: relative;
     z-index: 999;
@@ -120,8 +123,8 @@ export default Vue.extend({
     overflow: hidden;
     &.glossary {
       width: 97%;
-      height: 95%;
-      bottom: 0%;
+      height: 82%;
+      min-height: 600px;
     }
     &.xl {
       width: 90%;

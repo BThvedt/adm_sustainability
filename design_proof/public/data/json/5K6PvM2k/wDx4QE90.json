@@ -1,0 +1,123 @@
+{
+  "e_title": "392e003f-b5bb-4fe3-a084-6b4ab4581b41",
+  "e_prompt": "1f74413d-564e-49b6-a77f-c43bd8d47ffc",
+  "e_subTitle": "4a82ba58-9b57-4379-a138-9029c711e118",
+  "e_subTitle_2": "41d856d6-0a00-4b89-ba4a-1ee80b741729",
+  "introModal": {
+    "e_title": "b6f8ae4c-258b-43a7-a377-295ea5c48de5",
+    "e_text": "66b15171-7ff6-49c9-9c6e-934ff8c7efb4"
+  },
+  "conclusionModal": {
+    "e_title": "affc9890-a878-4718-aa87-07584208c237",
+    "e_text": "3deca66b-c5e0-4b2e-83ab-4b7f2d7ae974"
+  },
+  "incorrectText": {
+    "e_prompt": "ad7649ce-b2dc-40be-a8d3-2b1530fa16ab",
+    "e_tryAgain": "76f2e869-5173-4409-b3a6-69ed33d4b168"
+  },
+  "correctText": {
+    "e_prompt": "5b0387ef-b28d-4369-8e34-9ba2e8b66d98",
+    "e_text": "12ed47ab-9f5b-4c8f-98b3-7a383b4497d5"
+  },
+  "finalFeedback": {
+    "e_title": "37acb846-1d32-4cf4-beaa-8fe17968f571",
+    "e_text": "a6ed9a38-70bc-490c-b721-bf2aecfb7721",
+    "e_button": "19d38929-7b28-457a-9f91-4544c0e8d602"
+  },
+  "toolDropAreas": [
+    {
+      "e_title": "490d20d6-4164-4c54-b2b1-71bdafd18212",
+      "e_subtitle": "b710bc08-9926-4635-8cb0-285a18d3dbd3",
+      "e_description": "590de42e-f305-4de7-9e72-bb23ea77f670",
+      "id": 1
+    },
+    {
+      "e_title": "3f64e074-3589-47fd-9249-6a364bcf60c3",
+      "e_subtitle": "64365d0f-a98f-4ae6-8e24-4065931632e2",
+      "e_description": "17438968-26db-4ea1-bf4c-203eb199a345",
+      "id": 2
+    },
+    {
+      "e_title": "21814eac-c5a4-432a-a451-1ec98765cf5d",
+      "e_subtitle": "fd1508a4-a91a-4c0c-925c-03db5b5a2c2c",
+      "e_description": "d286209f-e0ae-4015-8bf6-6a344bd7f010",
+      "id": 3
+    }
+  ],
+  "toolDraggables": [
+    {
+      "id": 1,
+      "icon": "map-activity-beakers.png",
+      "e_text": "13812eee-1856-4087-866b-2555948dfa5b",
+      "correctDropArea": 1,
+      "e_clickRevealScreens": [
+        "55099e32-474a-4548-8e96-792e2ad24162",
+        "abc8be08-0c49-4ce8-b5be-30d3e6187fc0"
+      ],
+      "feedback": {
+        "e_correct": "43486ed0-37df-4cf6-8bd5-14e4118b4e13",
+        "e_incorrect": "56638238-d183-46c2-b105-b0c75e4466d7"
+      }
+    },
+    {
+      "id": 2,
+      "icon": "map-activity-comp.png",
+      "e_text": "9cd1c855-93ed-446b-8e72-404222827fcd",
+      "correctDropArea": 2,
+      "e_clickRevealScreens": [
+        "56c93f6d-d3a9-4e44-95fd-cdf8a13c6c4a",
+        "f24ef236-a87c-436f-92a7-3f800ee78cd3",
+        "d78e1771-2650-4d9c-a059-605382a7c9cf"
+      ],
+      "feedback": {
+        "e_correct": "3bb15c94-4d7d-4e8d-ae32-5b5d06afabaa",
+        "e_incorrect": "f368d242-4637-4c49-9775-92e04917b748"
+      }
+    },
+    {
+      "id": 3,
+      "icon": "map-activity-forklift.png",
+      "e_text": "f194c81e-ad58-4d29-b0ce-7388cc045e9a",
+      "correctDropArea": 3,
+      "e_clickRevealScreens": [
+        "97e6ef8c-7999-4977-aa41-024763e02fba",
+        "7d47a1f1-e505-4759-81cb-498c3cf8f930",
+        "d948f7b9-33ca-4552-bc3b-078a9730812c"
+      ],
+      "feedback": {
+        "e_correct": "a5158136-603d-4bd7-aafb-b9f304b87f6e",
+        "e_incorrect": "bb808c12-a5cf-4ca0-9a83-287a4d64e71d"
+      }
+    },
+    {
+      "id": 4,
+      "icon": "map-activity-checklist.png",
+      "e_text": "b1d32285-b34d-44ad-a3e0-cc575ec307ef",
+      "correctDropArea": 2,
+      "e_clickRevealScreens": [
+        "9decdac1-90ea-48db-b9af-c9f12e2e632a",
+        "451c75d8-ea1d-4e08-b890-04e064f9034e",
+        "a3cfcb3d-ab3b-4be5-b40b-4acdead46b48"
+      ],
+      "feedback": {
+        "e_correct": "8472c236-7483-496b-b3e4-74ef08b08a22",
+        "e_incorrect": "7823d782-4c14-4f68-b3fa-196af1c6d078"
+      }
+    },
+    {
+      "id": 5,
+      "icon": "map-activity-convo.png",
+      "e_text": "86b2337e-4b6d-4f9a-8fe7-d0b9f54789ea",
+      "correctDropArea": 3,
+      "e_clickRevealScreens": [
+        "01037697-7e8f-4bd9-9c66-c0342da51fec",
+        "e7ec6721-a935-4100-909f-cd2e3505b61b",
+        "648d4c32-2455-4b0d-acc8-13579b231fa2"
+      ],
+      "feedback": {
+        "e_correct": "f3dabe45-2ed3-4668-9525-520f2d42c6e2",
+        "e_incorrect": "2727ad1b-dc3c-42b8-852d-053096a17f6b"
+      }
+    }
+  ]
+}

@@ -1,17 +1,17 @@
 {
-  "107e608e-a9f4-4468-8a68-25ab917fe7b2": {
-    "html": "This will introduce the activity. Sed quis augue condimentum tellus mentum pellentesque consectetur adipiscing elit in est ipsum dolor sit amet."
-  },
-  "ef8f9ee1-a579-4b1b-b89e-beed40c5096e": {
-    "html": "Directions for completing the activity"
-  },
-  "53ae8e12-12ee-41a5-b600-9bb3e1349df9": {
-    "html": "<ol><li><p>Read the example on the screen.</p></li><li><p>Drag it to the scope level to which you think it belongs.</p></li><li><p>If you drag it incorrectly, the example will go back in rotation and you'll see it again.</p></li><li><p>The feedback will guide you to make the right choices.</p></li></ol>"
-  },
-  "7f49951c-ac11-4f07-9fc5-553ffd1cd95b": {
+  "661be6f7-07d8-4987-a3fd-71af52264cdd": {
     "html": "What's in Scope?"
   },
-  "0fe690fd-e80c-4026-9545-bef8c9d830fe": {
+  "3c2434b1-25a4-4a52-9b9f-5d8fc8a30c44": {
+    "html": "This will introduce the activity. Sed quis augue condimentum tellus mentum pellentesque consectetur adipiscing elit in est ipsum dolor sit amet."
+  },
+  "62dce35b-d5f2-48bc-99fb-62762334c1ea": {
+    "html": "Directions for completing the activity"
+  },
+  "98a6aa8a-29a5-49f7-b12e-875280e8d46f": {
+    "html": "<ol><li><p>Read the example on the screen.</p></li><li><p>Drag it to the scope level to which you think it belongs.</p></li><li><p>If you drag it incorrectly, the example will go back in rotation and you'll see it again.</p></li><li><p>The feedback will guide you to make the right choices.</p></li></ol>"
+  },
+  "4979a085-3958-48d5-8363-3aef0d18f8f4": {
     "html": "Begin Activity"
   }
 }

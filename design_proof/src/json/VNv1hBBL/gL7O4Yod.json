@@ -11,6 +11,7 @@
     "e_cat_3": "Choose a category"
   },
   "correct_categories": [6, 10, 11],
+  "e_attempt_prompt": "Attempt ",
   "finalFeedback": {
     "correct": {
       "e_title": "Congrats",
@@ -31,6 +32,16 @@
       "e_title": "Almost!",
       "e_text": "You've almost got it. Can you find the correct third choice? ",
       "e_button": "Try Again"
+    },
+    "outOFAttempts": {
+      "e_title": "It's tricky!",
+      "e_text": "Pay close attention the cateogires where ADM can have the biggest impact might not be what you expect. Press continue to reveal the correct answers.",
+      "e_button": "Continue"
+    },
+    "outOFAttemptsFinalMessage": {
+      "e_title": "The Correct Categories",
+      "e_text": "These are the correct categories",
+      "e_button": "Continue"
     }
   },
   "e_bar_graph_title": "ADM Scope 3 Impact Categories",

@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d21444e"],{afe8:function(e){e.exports=JSON.parse('{"e_title":"cd19f36f-4c72-498a-ab52-e2e5d505b915","e_subtitle":"57fd03da-25b1-427a-8650-82f9b2887c81","e_text":"e60c13ad-b4a9-4027-a770-6fd92812ea07","e_homeButton":"f916455f-66b6-4683-9741-aa821cdfacc9"}')}}]);
+//# sourceMappingURL=chunk-2d21444e.bac5ccb0.js.map

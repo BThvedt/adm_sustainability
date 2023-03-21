@@ -1,0 +1,54 @@
+1) Eliminate extra pages, components. Start with menu page, section A (2 pages), section B (2 pages), conclusiuon
+2) Eliminate the Json features I don't really use
+3) Add in the Extra Json for stuff like menu .. (and eventually glossary)
+3) Eliminate data folder
+4) Eliminate extra environent variables
+5) Make sure LMS functionality works
+6) Navagatble, non-navitagble pages 
+7) Modal component 
+8) Components List: 
+	- Modal 
+	- popup
+	- prompt
+	- multi choice
+	- multi select
+	- drag/drop into plabes
+	- drag/drop into columns
+	- slider/rotator
+	- glossary
+	- continue where left off modal (as an example of how to use the modal base if nothing else)
+	- innerCourseLink
+	- tabs
+	- accordian
+	
+
+
+Possible next steps: 
+add extra json files
+edit meta and store to not use objectives .. unnedded
+menu and conclusion pages bare minimum functionality 
+remind myself about the load extra json path function 
+goal for tonight .. ENV var refactor? LMS test? Module Portal test??? Who knows ... 
+
+Next: make Glossary modal (glossary button in header)
+
+Eh .. I should figure out tabs first before 
+
+Ok. SO! Goal tomorrow.. do tabs component, conclusion screen. Test locally, test live, test LMS.
+Then do taxes. Haha
+
+HOW TO COMBINE COMPONENTS ---- --- --- for this version.. just do w/ code
+- click/reveal accordian
+- popup/question 
+
+Display
+- basic - containers & sections
+- custom (custome controls for modified components)
+- grouped (for combining components)
+
+Things I want to do tomorrow -- 
+- Finish Conclusion
+- test in LMS and in Module Portal 
+- Make editable
+- Load JSON for pages 
+- Think of plan to switch active back and forth (Users can't see active, admins get special css class)

@@ -1,3 +1,6 @@
+Design Mockups:
+https://xd.adobe.com/view/6bd5c942-0886-4f48-a281-1bb56640c73f-3e86/
+
 https://vuejsexamples.com/progressbar-for-vue-js-2/
 
 Email              bthvedt@alleni.com
@@ -56,6 +59,9 @@ STILL CANT MERGE?
 Just switch branch to master, run cleanup script then push that
 "git push origin master -f" (the force is to force an update)
 
+VTT caption generaotr
+https://www.vtt-creator.com/editor
+
 
 
 
@@ -81,7 +87,19 @@ https://alleni.egnyte.com/
 https://fileshare.alleni.com/navigate/folder/e814da10-c605-4878-9d92-f016b5669469
 
 Jira
-https://alleninteractions.atlassian.net/jira/software/c/projects/QUAL/boards/1231
+Remember - it has to be a "Company Managed" project (only admins can create)
+Then find project settings on the top bar
+Choose "Issue Collector" from the side bar that pops up
+Create an Issue Collector
+Replace script in the jiraWindow.html file
+https://bthvedt.atlassian.net/jira/core/projects/ADM/board
+
+
+I don't think they're gonna set up a JIRA board but in case if they do ... 
+
+JIRA 
+user: bthvedt@alleni.com 
+pass: Song2!2Montage?2Skirmish // probably shouldn't be using my other password but .. here
 
 FTP
 WinSCP
@@ -95,26 +113,19 @@ port: 21
 
 
 clients.alleni.com
+
+QA:
+
 Clients:
 https://clients.alleni.com
 Username: ADM
 Password: ADMReview
 
-username: 3M QA
-password: qa
 
 s3 buckket w/ password
 https://medium.com/@lmakarov/serverless-password-protecting-a-static-website-in-an-aws-s3-bucket-bfaaa01b8666
 
-QA:
-https://clients.alleni.com
-username: 3M QA
-password: qa
 
-Clients:
-https://clients.alleni.com
-username: 3M
-password: Client Review
 
 invitation emails: 
 colson@alleni.com, aiverson@alleni.com, ntichawa@alleni.com, estrain@alleni.com

@@ -30,6 +30,7 @@ export type SuspendedData = {
   locked: boolean[]
   completed: boolean[]
   lastLogin: string
+  lockedLessonParts: Record<string, boolean[]>
 }
 
 export enum Entry {
@@ -105,6 +106,7 @@ export type MenuStatus = {
 export interface MetaState {
   //fakeLoadingTimes: FakeLoadingTimes | undefined
   bodyClickedTicker: number
+  windowResizeTicker: number
   sizes: Size[]
   sections: Section[]
   currSize: Size | null
@@ -118,6 +120,7 @@ export interface MetaState {
   navStatus: NavStatus
   menuStatus: MenuStatus
   extraJson: Record<string, any>
+  modalShowing: boolean
   scorm: {
     module: ModuleData
     user: UserData

@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0b613a"],{"1c2d":function(o){o.exports=JSON.parse('{"e_prompt":"Choose your role","people":[{"id":1,"role":"Person One","title":"Customer","image":"conversation/convo-headshot-1.png","e_buttontext":"Choose"},{"id":2,"role":"Person Two","title":"Customer","image":"conversation/convo-headshot-2.png","e_buttontext":"Choose"},{"id":3,"role":"Person Three","title":"Customer","image":"conversation/convo-headshot-3.png","e_buttontext":"Choose"}]}')}}]);
-//# sourceMappingURL=chunk-2d0b613a.d08139c6.js.map

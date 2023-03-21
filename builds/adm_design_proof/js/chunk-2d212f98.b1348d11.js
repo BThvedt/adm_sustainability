@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d212f98"],{ab67:function(e){e.exports=JSON.parse('{"e_title":"Final Conclusion Page","e_subtitle":"Lorem ipsum aqui nec purus quis diam pharetra. Sed quis augue condimentum tellus mentum pellentesque consectetur adipiscing elit in est ipsum dolor sit amet.","e_text":"<p>Click the button to complete the section</p>","e_homeButton":"Go Home"}')}}]);
-//# sourceMappingURL=chunk-2d212f98.b1348d11.js.map

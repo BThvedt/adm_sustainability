@@ -41,7 +41,7 @@
         {
           "id": "8U9NajQt",
           "name": "Menu",
-          "specialClass": "menu-class"
+          "specialClass": "menu-page"
         }
       ],
       "hiddenPages": []
@@ -59,7 +59,7 @@
         {
           "id": "XEU4Azyr",
           "name": "Introduction Video",
-          "specialClass": "intro-video-class",
+          "specialClass": "lesson-one-video",
           "data": {}
         }
       ],
@@ -86,7 +86,7 @@
         {
           "id": "nyOoIEb3",
           "name": "Intro Page One",
-          "specialClass": "dnd-intro-pg-1-class",
+          "specialClass": "lesson-2-intro-one",
           "data": {
             "showContinue": true
           }
@@ -94,22 +94,17 @@
         {
           "id": "6jlGHdF8",
           "name": "Instructions",
-          "specialClass": "dnd-intro-pg-1-class"
+          "specialClass": "lesson-2-intro-two"
         },
         {
           "id": "wDx4QE90",
-          "name": "NewActivity",
-          "specialClass": "dnd-activity-class"
-        },
-        {
-          "id": "Gd3cTXio",
           "name": "Activity",
-          "specialClass": "dnd-activity-class"
+          "specialClass": "lesson-2-drag-and-drop-activity"
         },
         {
           "id": "ghT07UMa",
           "name": "Conclusion",
-          "specialClass": "dnd-conclusion-pg-2-class"
+          "specialClass": "lesson-2-conclusion"
         }
       ],
       "hiddenPages": []
@@ -135,7 +130,7 @@
         {
           "id": "fIU3ieaf",
           "name": "Intro Page One",
-          "specialClass": "categories-intro-pg-1-class",
+          "specialClass": "lesson-3-intro-one",
           "data": {
             "showContinue": true
           }
@@ -143,17 +138,17 @@
         {
           "id": "WEp57ZMQ",
           "name": "Instructions",
-          "specialClass": "categories-intro-class"
+          "specialClass": "lesson-3-intro-two"
         },
         {
           "id": "gL7O4Yod",
           "name": "Activity",
-          "specialClass": "dnd-activity-class"
+          "specialClass": "lesson-3-activity-class"
         },
         {
           "id": "belYuoBB",
           "name": "Conclusion",
-          "specialClass": "dnd-intro-pg-2-class"
+          "specialClass": "lesson-3-conclusion"
         }
       ],
       "hiddenPages": []
@@ -179,7 +174,7 @@
         {
           "id": "JbRARCGK",
           "name": "Intro Page One",
-          "specialClass": "categories-intro-pg-1-class",
+          "specialClass": "lesson-4-intro-one",
           "data": {
             "showContinue": true
           }
@@ -187,17 +182,17 @@
         {
           "id": "lMw290QG",
           "name": "Instructions",
-          "specialClass": "categories-intro-class"
+          "specialClass": "lesson-4-intro-two"
         },
         {
           "id": "N9AI8VXE",
           "name": "Activity",
-          "specialClass": "dnd-activity-class"
+          "specialClass": "lesson-4-activity"
         },
         {
           "id": "MC5qEusl",
           "name": "Conclusion",
-          "specialClass": "dnd-conclusion-class",
+          "specialClass": "lesson-4-conclusion",
           "data": {
             "showContinue": true
           }
@@ -205,7 +200,7 @@
         {
           "id": "L680n9d5",
           "name": "Conclusion Page Two",
-          "specialClass": "dnd-intro-pg-2-class"
+          "specialClass": "lesson-4-conclusion-page-2"
         }
       ],
       "hiddenPages": []
@@ -214,12 +209,18 @@
   "suspendedData": {
     "locked": [false, false, false, false, false],
     "completed": [false, false, false, false, false],
-    "lastLogin": "1/1/2021"
+    "lastLogin": "1/1/2021",
+    "lockedLessonParts": {
+      "intro": [false],
+      "whatsInScope": [false, false, true],
+      "exploringScope3": [false, false, true],
+      "dayInTheLife": [false, false, true]
+    }
   },
   "moduleDefaults": {
     "resumed": false,
     "moduleStatus": "incomplete",
-    "lastLocation": "/5K6PvM2k/wDx4QE90",
+    "lastLocation": "",
     "score": {
       "max": 100,
       "min": 0,

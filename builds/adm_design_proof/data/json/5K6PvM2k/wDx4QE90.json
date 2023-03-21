@@ -1,0 +1,237 @@
+{
+  "e_title": "a3ff9e8b-0271-4570-ad95-4bdcf9d84f54",
+  "e_prompt": "60f13a18-ddb2-4d61-9a8c-516ad60b463f",
+  "e_subTitle": "c63da868-0789-4d5d-b1ee-a317fdfc55ea",
+  "e_subTitle_2": "8b69c480-d292-439f-9d6b-5a0ededa091a",
+  "introModal": {
+    "e_title": "92c927bf-296e-4ba4-90a8-695884914b75",
+    "e_text": "0bff6afd-447a-44da-b509-335ac5922408"
+  },
+  "conclusionModal": {
+    "e_title": "d1d8b3d3-a048-4e10-9476-a0531043dc28",
+    "e_text": "e79086d8-8082-4e00-8caf-966f8b545ff7"
+  },
+  "incorrectText": {
+    "e_prompt": "c7f01126-087f-492f-a299-77771ed12e95",
+    "e_tryAgain": "105b3867-7c8d-4d64-ad93-4ffe572dc222"
+  },
+  "correctText": {
+    "e_prompt": "0d4e36e1-46a0-4dd5-8fd8-39160fe6dae6",
+    "e_text": "26a6b517-3552-44cf-a4c1-fa6e9eae37c8"
+  },
+  "finalFeedback": {
+    "e_title": "b92b3372-26e0-48c5-9c62-09f6c4930cdb",
+    "e_text": "b4a2757c-65c8-471c-89ba-0bc7c85e9e24",
+    "e_button": "6c1c34ed-7972-4bf3-b939-5be5486db01b"
+  },
+  "toolDropAreas": [
+    {
+      "e_title": "c18a8a93-4d43-40a0-a986-0c5a6bad4dda",
+      "e_subtitle": "cf9d4a0d-5ecf-4f64-9512-357aad66c715",
+      "e_description": "c0879b85-1dc7-4083-87b9-1226ff8945ef",
+      "id": 1
+    },
+    {
+      "e_title": "0e822a7f-4f0c-45b5-83f5-a3e656472939",
+      "e_subtitle": "8b3c72f0-de25-40f1-b8ae-49cef2b6a2e1",
+      "e_description": "9d4de9a6-681b-494e-b542-15d106a785d3",
+      "id": 2
+    },
+    {
+      "e_title": "c7330d6c-d572-4400-a0e6-cf75a6a4cb54",
+      "e_subtitle": "c59fed77-a58a-4612-99e6-0a323eb9f08d",
+      "e_description": "9a27d335-51b2-4c5a-b142-3177e21dfc66",
+      "id": 3
+    }
+  ],
+  "toolDraggables": [
+    {
+      "id": 1,
+      "icon": "electricity-purchased.png",
+      "e_text": "69e63e4f-fb2d-440e-a83c-772addd51495",
+      "correctDropArea": 2,
+      "e_clickRevealScreens": [
+        "36f210bf-5faa-42b7-bce1-d620315a9d62",
+        "ceffdfdc-01e3-4844-8118-5127e73901f1"
+      ],
+      "feedback": {
+        "e_correct": {
+          "e_title": "9fae6c5c-0265-4f41-a810-a43f4da4674b",
+          "e_text": "727a53c6-60f8-4d41-9169-6fc35551dd7e"
+        },
+        "e_incorrect": [
+          {
+            "e_title": "1b3c4148-f6ae-478c-af85-351d46e838bc",
+            "e_text": "6c1f0c23-4d0d-4657-be53-46658bc1453c"
+          },
+          {
+            "e_title": "de55e718-5f30-4f30-802e-fc27e48868e1",
+            "e_text": "fdbc9587-d5a5-4975-9711-b4344e5be6d2"
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "icon": "emissions-on-farm.png",
+      "e_text": "7e1fcba3-2c30-400a-a749-717459a990c2",
+      "correctDropArea": 3,
+      "e_clickRevealScreens": [
+        "3268e550-1fbb-45be-8d0c-178d74700181",
+        "fde7830f-f732-4b78-a335-19086f41af7c",
+        "da8ce500-f6ed-42d9-899c-3553276320c0"
+      ],
+      "feedback": {
+        "e_correct": {
+          "e_title": "d81191e5-b753-4e15-8722-c3c6f8b02493",
+          "e_text": "3d4b20a0-46a1-4d8b-9d47-e7b83d7a8122"
+        },
+        "e_incorrect": [
+          {
+            "e_title": "b4bef081-f40e-4731-8fb5-a9aa1971b028",
+            "e_text": "5d5bf5b6-436e-40a9-8d13-5ad7b3fae0a9"
+          },
+          {
+            "e_title": "36276959-4322-4f31-af0a-aa22903752a7",
+            "e_text": "01c6502a-4953-4fda-9eca-f9e3fb10f247"
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "icon": "steam-purchased.png",
+      "e_text": "96eb4fe9-739e-406e-b5c2-fed30093e720",
+      "correctDropArea": 2,
+      "e_clickRevealScreens": [
+        "6cdaa9cb-9f70-4e97-9f6a-4823d939ea0d",
+        "bd9cae5b-967c-439f-9ba5-f382fd420cc7",
+        "f8f5232a-1b77-4885-bf1c-26787aa180d8"
+      ],
+      "feedback": {
+        "e_correct": {
+          "e_title": "ecf8df43-cd88-428c-89ac-cb1c6c1ab0af",
+          "e_text": "1ea7c621-5a44-401e-8672-f660d87388c6"
+        },
+        "e_incorrect": [
+          {
+            "e_title": "3b295540-d61a-4d0c-8bae-80fe31905de8",
+            "e_text": "1e8f878b-c471-43bd-a302-e9acb3b00998"
+          },
+          {
+            "e_title": "bc8567ba-34a9-4de4-b168-85bcd645f02c",
+            "e_text": "3bb59070-dbd7-4859-a17c-e3e82fbfbc6e"
+          }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "icon": "coal-burned.png",
+      "e_text": "14631f39-bfa3-48d0-bf30-95309abee6aa",
+      "correctDropArea": 1,
+      "e_clickRevealScreens": [
+        "0063af07-ee4d-4755-b226-c5691b54c037",
+        "a3a70ef4-2c57-4f81-9a4b-19ad81ee2d31",
+        "d018f10a-a3d7-46bf-b535-8cadac508c27"
+      ],
+      "feedback": {
+        "e_correct": {
+          "e_title": "9d5e9a50-3ed8-4cec-be4d-ed4b40e95569",
+          "e_text": "b35af269-8cd7-42c4-b545-b08aa01e938b"
+        },
+        "e_incorrect": [
+          {
+            "e_title": "8d1572ca-1ffc-4f52-9a9c-b35164c4bea7",
+            "e_text": "8b72b572-66d7-4c5b-9664-5b50df3de426"
+          },
+          {
+            "e_title": "8af78d63-7327-45aa-badd-70aa0a516496",
+            "e_text": "9d9745a2-6735-4408-896b-a554688c78ee"
+          }
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "icon": "customers-process.png",
+      "e_text": "23ee2531-9f84-4087-b4ea-052478affd09",
+      "correctDropArea": 3,
+      "e_clickRevealScreens": [
+        "80e2ef05-0bb4-4470-82e3-a86e6ab2004a",
+        "95f53a5a-735d-455c-b9cd-440d43afe1be",
+        "5d8c357c-bb26-4017-8bf9-d5c2e59fb380"
+      ],
+      "feedback": {
+        "e_correct": {
+          "e_title": "e9e5bcab-38f4-4373-88c2-45cfa95ad81f",
+          "e_text": "56a1044e-94c1-40bc-8536-4472f69d42b1"
+        },
+        "e_incorrect": [
+          {
+            "e_title": "77440fd8-420b-40ae-aed7-0de688448916",
+            "e_text": "e402c41d-747b-479b-ace3-63efd5337e43"
+          },
+          {
+            "e_title": "a738245b-3b4a-4b63-9622-15ddcd75de2a",
+            "e_text": "3991b87f-2369-423b-88d7-6f90fad5f18e"
+          }
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "icon": "diesel-burned.png",
+      "e_text": "d83c87ff-d8e9-4e47-8d89-a964733e304d",
+      "correctDropArea": 1,
+      "e_clickRevealScreens": [
+        "dd87fc75-15e1-4529-9b97-f8bd04d6292e",
+        "0cd10603-622a-4b6c-9899-b18336e8bb49",
+        "09eb117c-60c5-47af-86f6-f1e5f45adb83"
+      ],
+      "feedback": {
+        "e_correct": {
+          "e_title": "3c55b89b-dc2d-464f-a6a1-56e264eea0a8",
+          "e_text": "aaae139b-1ade-4632-9cc0-1be40a270ca8"
+        },
+        "e_incorrect": [
+          {
+            "e_title": "d8a006fb-b1e1-4c41-8dc2-475401948814",
+            "e_text": "ac9650b4-7adf-4566-b648-c31dee196161"
+          },
+          {
+            "e_title": "3d5dcedd-091f-4a62-8e32-1e150f56a8d9",
+            "e_text": "5eba8a06-b67e-47e7-85a1-080c20011f1a"
+          }
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "icon": "employees-commute.png",
+      "e_text": "85f900c8-050c-42e1-9f10-fd2f87d48049",
+      "correctDropArea": 3,
+      "e_clickRevealScreens": [
+        "32ca0691-6712-4f3e-a23e-b25f70e55395",
+        "78a551dc-fd6a-478e-b16d-dc72abf1ab0f",
+        "23099d11-6e71-4f6b-ae5e-e9d7a6633dbf"
+      ],
+      "feedback": {
+        "e_correct": {
+          "e_title": "b4f81759-4567-4f4a-a6fb-d753f64fbf91",
+          "e_text": "c6d89d69-096a-4280-9ae3-4b4098aa1ddf"
+        },
+        "e_incorrect": [
+          {
+            "e_title": "911ebb77-21aa-4bb4-83e3-bc555230ed80",
+            "e_text": "fb77f1f3-2f39-4653-b521-a70a1016f382"
+          },
+          {
+            "e_title": "8fcf1ccd-24fa-442d-90fd-450d42a13230",
+            "e_text": "72abbda4-a1a2-4bcd-a842-6111a9dd44d3"
+          }
+        ]
+      }
+    }
+  ]
+}

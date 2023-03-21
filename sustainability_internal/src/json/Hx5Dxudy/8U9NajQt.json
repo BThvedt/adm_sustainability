@@ -1,0 +1,39 @@
+{
+  "e_menuTitle": "Main Menu",
+  "e_title": "ADM Sustainability Overview",
+  "e_subtitle": "Welcome to ADM's Sustainability Overview training! Finish all four sections to complete the course.<br>You'll return to this main menu after completing each section. Get started now by launching the Introduction.",
+  "menu": [
+    {
+      "e_title": "<ol><li>Introduction</li></ol>",
+      "e_subTitle": "Review ADM's sustainability terms and concepts",
+      "e_estTime": "Est. Time: 2 min",
+      "e_button": "Launch",
+      "image": "menu/intro.jpg",
+      "section": 1
+    },
+    {
+      "e_title": "<ol start=\"2\"><li>What's in Scope?</li></ol>",
+      "e_subTitle": "Explore and define scope 1, 2, and 3",
+      "e_estTime": "Est. Time: 5 min",
+      "e_button": "Launch",
+      "image": "menu/drag_and_drop.jpg",
+      "section": 2
+    },
+    {
+      "e_title": "<ol start=\"3\"><li>Exploring Scope 3</li></ol>",
+      "e_subTitle": "Take a deeper dive into scope 3",
+      "e_estTime": "Est. Time: 5 min",
+      "e_button": "Launch",
+      "image": "menu/categories.jpg",
+      "section": 3
+    },
+    {
+      "e_title": "<ol start=\"4\"><li>A Day of Sustainability</li></ol>",
+      "e_subTitle": "Practice having sustainability discussions",
+      "e_estTime": "Est. Time: 8 min",
+      "e_button": "Launch",
+      "image": "menu/conversation.jpg",
+      "section": 4
+    }
+  ]
+}

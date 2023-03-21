@@ -19,18 +19,29 @@
     "e_prompt": "Correct feedback goes here...",
     "e_text": "Continue"
   },
+  "finalFeedback": {
+    "e_title": "Final Feedback Title",
+    "e_text": "Final Feedback Text",
+    "e_button": "Complete Section"
+  },
   "toolDropAreas": [
     {
-      "e_title": "Scope 1 Direct",
-      "accepts": 1
+      "e_title": "Scope 1",
+      "e_subtitle": "Direct Emissions",
+      "e_description": "Definition fo scope Lorem ipsum sed nis pretium nom lobortis eu pharetra.",
+      "id": 1
     },
     {
-      "e_title": "Scope 2 Indirect",
-      "accepts": 2
+      "e_title": "Scope 2",
+      "e_subtitle": "Indirect Emissions",
+      "e_description": "Emissions created by purchased lorem ipsum sed nis pretium.",
+      "id": 2
     },
     {
-      "e_title": "Scope 3 Indirect",
-      "accepts": 3
+      "e_title": "Scope 3",
+      "e_subtitle": "Indirect Emissions",
+      "e_description": "Definition of scope lorem ipsum sed nis pretium nom labortis eu pharetra.",
+      "id": 3
     }
   ],
   "toolDraggables": [

@@ -36,7 +36,8 @@
                         category.id === selectedIdThree &&
                         displayFeedback) ||
                       success === true ||
-                      selectedCategoryNameList.includes(category.title)
+                      selectedCategoryNameList.includes(category.title) ||
+                      outOfAttemptsReveal
                     "
                     class="bar-bar"
                     :class="`${category.correct ? 'correct' : 'incorrect'}`"
@@ -44,28 +45,6 @@
                       width: `${(category.score / 16).toFixed(2) * 100}%`,
                     }"
                   />
-                  <!-- <div
-                    v-if="
-                      (activeCategory > 1 && category.id === selectedIdOne) ||
-                      (activeCategory === 1 &&
-                        category.id === selectedIdOne &&
-                        displayFeedback) ||
-                      (activeCategory > 2 && category.id === selectedIdTwo) ||
-                      (activeCategory === 2 &&
-                        category.id === selectedIdTwo &&
-                        displayFeedback) ||
-                      (activeCategory > 3 && category.id === selectedIdThree) ||
-                      (activeCategory === 3 &&
-                        category.id === selectedIdThree &&
-                        displayFeedback) ||
-                      success !== null
-                    "
-                    class="bar-bar"
-                    :class="`${category.correct ? 'correct' : 'incorrect'}`"
-                    :style="{
-                      width: `${(category.score / 16).toFixed(2) * 100}%`,
-                    }"
-                  /> -->
                 </transition>
               </div>
             </div>
@@ -96,6 +75,7 @@
                     correctResults[0] !== null
                   "
                   class="selected-category-display"
+                  :key="outOfAttemptsReveal ? 'a' : 'b'"
                 >
                   <img
                     class="selected-category-display-image"
@@ -160,6 +140,7 @@
                     correctResults[1] !== null
                   "
                   class="selected-category-display"
+                  :key="outOfAttemptsReveal ? 'a' : 'b'"
                 >
                   <img
                     class="selected-category-display-image"
@@ -224,6 +205,7 @@
                     correctResults[2] !== null
                   "
                   class="selected-category-display"
+                  :key="outOfAttemptsReveal ? 'a' : 'b'"
                 >
                   <img
                     class="selected-category-display-image"
@@ -267,6 +249,10 @@
             </div>
           </div>
           <div id="feedback-container">
+            <div id="attempt-counter">
+              <E t="span" :h="json.e_attempt_prompt" class="header" />
+              <span class="header">{{ attempt }} of 3</span>
+            </div>
             <transition
               :enter-active-class="TEnter.FADE_IN"
               :leave-active-class="`${TExit.FADE_OUT}`"
@@ -274,7 +260,11 @@
             >
               <div
                 class="category-feedback"
-                v-if="displayFeedback !== true && success === null"
+                v-if="
+                  displayFeedback !== true &&
+                  success === null &&
+                  !displayFinalAttemptMessage
+                "
                 key="a"
               >
                 <E
@@ -307,7 +297,11 @@
               </div>
               <div
                 class="category-feedback"
-                v-else-if="displayFeedback === true && success === null"
+                v-else-if="
+                  displayFeedback === true &&
+                  success === null &&
+                  !displayFinalAttemptMessage
+                "
                 key="b"
               >
                 <E
@@ -364,7 +358,7 @@
               </div>
               <div
                 class="category-feedback"
-                v-else-if="success !== null"
+                v-else-if="success !== null && !displayFinalAttemptMessage"
                 key="c"
               >
                 <E
@@ -477,6 +471,60 @@
                           "
                         />
                       </strong>
+                    </div>
+                  </div>
+                </transition>
+              </div>
+              <div
+                id="out-of-attempts"
+                class="category-feedback"
+                v-else-if="displayFinalAttemptMessage && !outOfAttemptsReveal"
+                key="d"
+              >
+                <E
+                  t="h3"
+                  :h="json.finalFeedback.outOFAttempts.e_title"
+                  class="header"
+                />
+                <E
+                  t="p"
+                  :h="json.finalFeedback.outOFAttempts.e_text"
+                  class="feedback-text"
+                />
+                <transition
+                  :enter-active-class="TEnter.FADE_IN_UP"
+                  :leave-active-class="`${TExit.FADE_OUT} ${TTimes.VERY_FAST}`"
+                >
+                  <div @click="proceedToFinalMessage" id="continue-container">
+                    <div class="button continue-button small-button">
+                      <strong>Continue</strong>
+                    </div>
+                  </div>
+                </transition>
+              </div>
+              <div
+                id="out-of-attempts"
+                class="category-feedback"
+                v-else-if="displayFinalAttemptMessage && outOfAttemptsReveal"
+                key="e"
+              >
+                <E
+                  t="h3"
+                  :h="json.finalFeedback.outOFAttemptsFinalMessage.e_title"
+                  class="header"
+                />
+                <E
+                  t="p"
+                  :h="json.finalFeedback.outOFAttemptsFinalMessage.e_text"
+                  class="feedback-text"
+                />
+                <transition
+                  :enter-active-class="TEnter.FADE_IN_UP"
+                  :leave-active-class="`${TExit.FADE_OUT} ${TTimes.VERY_FAST}`"
+                >
+                  <div @click="finishOrReset" id="continue-container">
+                    <div class="button continue-button small-button">
+                      <strong>Continue</strong>
                     </div>
                   </div>
                 </transition>
@@ -600,10 +648,14 @@ export default Vue.extend({
       ADM_METER_MAX,
 
       displayFeedback: false,
+      displayFinalAttemptMessage: false,
+      outOfAttemptsReveal: false,
       correctResults: [] as (boolean | null)[],
       success: null as boolean | null,
 
       selectedCategoryNameList: [] as string[],
+
+      attempt: 1,
     }
   },
   mounted() {
@@ -612,6 +664,7 @@ export default Vue.extend({
     })
   },
   methods: {
+    // a dumb function don't worry about it was a time-rushed hack and probably not even relevant with current functionality haha
     zeroOrOne() {
       let returnVal = 0
       switch (this.activeCategory) {
@@ -643,8 +696,30 @@ export default Vue.extend({
 
       return returnVal
     },
+    proceedToFinalMessage() {
+      // reveal the correct answers
+      const correctCategories = this.json.categories.filter((category: any) => {
+        return category.correct
+      })
+
+      this.categoryOne = correctCategories[0]
+      this.categoryTwo = correctCategories[1]
+      this.categoryThree = correctCategories[2]
+
+      this.selectedIdOne = correctCategories[0].id
+      this.selectedIdTwo = correctCategories[1].id
+      this.selectedIdThree = correctCategories[2].id
+
+      this.correctResults[0] = true
+      this.correctResults[1] = true
+      this.correctResults[2] = true
+
+      this.$forceUpdate()
+
+      this.outOfAttemptsReveal = true
+    },
     finishOrReset() {
-      if (!this.success) {
+      if (!this.success && !this.outOfAttemptsReveal) {
         this.correctResults = this.correctResults.map((result) => {
           return result ? result : null
         })
@@ -680,8 +755,14 @@ export default Vue.extend({
           removeCategory(this.selectedIdThree, this.selectorCategories)
         }
 
+        this.attempt++
         this.success = null
-      } else {
+      } else if (this.success || this.outOfAttemptsReveal) {
+        this.$store.dispatch("meta/unlockLessonPart", {
+          lesson: "exploringScope3",
+          part: 2, // zero indexed remember
+        })
+
         this.$store.dispatch("meta/goForward")
       }
     },
@@ -736,23 +817,25 @@ export default Vue.extend({
           break
       }
 
-      // this.activeCategory++
-
       this.displayFeedback = false
       if (weAreDone) {
-        let newArray = [
-          this.selectedIdOne,
-          this.selectedIdTwo,
-          this.selectedIdThree,
-        ]
+        // let newArray = [
+        //   this.selectedIdOne,
+        //   this.selectedIdTwo,
+        //   this.selectedIdThree,
+        // ]
         if (
-          //array_compare(newArray.sort(), this.json.correct_categories.sort())
           this.correctResults.length === 3 &&
           this.correctResults.every((result) => result)
         ) {
           this.success = true
         } else {
-          this.success = false
+          // ATTEMPT CODE RIGH HER
+          if (this.attempt < 3) {
+            this.success = false
+          } else {
+            this.displayFinalAttemptMessage = true
+          }
         }
       } else {
         // remove the chosen category from the selectorCateories
@@ -923,7 +1006,11 @@ export default Vue.extend({
         box-sizing: border-box;
         margin-top: 0.5em;
         overflow: hidden;
-
+        #attempt-counter {
+          position: absolute;
+          right: 1em;
+          top: 1em;
+        }
         .category-feedback {
           position: absolute;
           width: calc(100% - 1em);
